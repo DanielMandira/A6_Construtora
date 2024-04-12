@@ -1,3 +1,17 @@
 .bgGradientCircle{
     background: radial-gradient(#9c510f, #000000);
 }
+
+.Michroma{
+    font-family: Michroma;
+}
+
+@font-face {
+    font-family: Michroma;
+    src: url(../src/assets/fonts/Michroma-Regular.ttf);
+}
+
+.image-initial{
+    width: 544px;
+    height: 874px;
+}
