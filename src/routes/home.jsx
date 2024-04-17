@@ -5,8 +5,8 @@ const Home = () => {
     return (
         <>
 
-            <section className="grid grid-flow-col border border-white">
-                <div className="border-white border-e"></div>
+            <section className="grid grid-flow-col border-t border-b border-white">
+                <div className="border-white border-e w-10"></div>
                 <div className="border-white border-e">
                     <div className="grid grid-flow-row border-white border-b">
                         <h1 className="Michroma text-6xl text-white content-center justify-self-center">Seu sonho, <br />
@@ -41,7 +41,7 @@ const Home = () => {
                 <div className=" grid grid-flow-col content-center border-white border-b border-e">
                     <img className="image-initial" src="https://s3-alpha-sig.figma.com/img/ba36/ab9b/67126f16b01a6f4edd9e588f9b387604?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TG8jwb8OO09Hsxijj-b1PZfimfNrvnoWjfxYDfX0GFT3hVOXCW-wrSkKdSyIQ-gu8xHUlRnhbE4N5mqbp~DeftThQ9PDcBP7leOvYw51jLa1YQpTMtJDGjwwKbhCbICxQHH0XmoZ2zsLu7KmzKGU5H3hZatMpFEnF6obePqplEs-GMuOT3J0qvhbnLYTNFkBR6DFnSAAIMFyeSNsTcHyjGM2KPoMJm~e9~fUe2FFUJuT9YGY-Nw7hQ03D4wHOr93q3wJou57Wh7VjRYeoVsRZdwvEpnyIAW057uHykoM8Dv8WTkXCcjbmEA5BXB6aSbsaQmt5SS1zqtJ3YmDGgcTKQ__" />
                 </div>
-                <div className="border-white border-b"></div>
+                <div className="border-white border-b  w-10"></div>
             </section>
             <br />
             <section className="grid grid-flow-col justify-center text-center text-white border-white border">
