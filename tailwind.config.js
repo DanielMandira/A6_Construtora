@@ -11,7 +11,11 @@ export default {
       'white':'#FFFFFF'
     },
     
-    extend: {},
+    extend: {
+      maxWidth:{
+          '160': '1650px',
+      }
+    },
   },
   plugins: [],
 }

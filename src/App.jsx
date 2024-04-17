@@ -4,10 +4,8 @@ import NavBar from './components/navBar'
 function App() {
   return (
     <>
-    <div className=' grid-flow-col px-20 bg-black'> 
-      <div>
-        <NavBar />
-      </div>
+    <div className='bg-black mx-auto center'> 
+      <NavBar />
       <Outlet/>
     </div>
     </>

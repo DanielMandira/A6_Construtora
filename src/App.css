@@ -13,3 +13,9 @@
     width: 544px;
     height: 874px;
 }
+
+.center{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
