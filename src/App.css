@@ -3,19 +3,20 @@
 .Michroma{
     font-family: Michroma;
 }
+.Sora{
+    font-family: Sora;
+}
 
 @font-face {
     font-family: Michroma;
     src: url(../src/assets/fonts/Michroma-Regular.ttf);
 }
+@font-face {
+    font-family: Sora;
+    src: url(../src/assets/fonts/Sora-VariableFont_wght.ttf);
+}
 
 .image-initial{
     width: 544px;
     height: 874px;
-}
-
-.center{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
 }

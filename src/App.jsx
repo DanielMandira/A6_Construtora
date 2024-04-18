@@ -4,7 +4,7 @@ import NavBar from './components/navBar'
 function App() {
   return (
     <>
-    <div className='bg-black mx-auto center'> 
+    <div className='bg-black mx-auto grid grid-flow-row justify-center max-w-160'> 
       <NavBar />
       <Outlet/>
     </div>

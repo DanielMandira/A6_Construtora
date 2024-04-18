@@ -12,8 +12,12 @@ export default {
     },
     
     extend: {
+      width:{
+        '544': '544px' 
+      },
       maxWidth:{
-          '160': '1650px',
+          '165': '1650px',
+          '544': '544px'
       }
     },
   },
