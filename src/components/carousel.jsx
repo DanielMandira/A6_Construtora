@@ -34,7 +34,7 @@ const Carousel = ({data}) =>{
           </button>
         </div>
       )}
-        <div className="bg-black grid grid-flow-col ">
+        <div className=" grid grid-flow-col ">
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + 4).map((d) => (
             <div className="border border-white mx-2"> 
                 <img className="w-96 h-40 grayscale " src={d.src}/>

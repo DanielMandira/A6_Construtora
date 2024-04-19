@@ -17,7 +17,7 @@ const Home = () => {
                 {/* Div Slogan */}
                 <div className="border-white border-e">
                     <div className="grid grid-flow-row border-white border-b">
-                        <div className="my-28 mx-60">
+                        <div className="my-28 mx-36">
                             {/* Slogan */}
                             <div className="grid grid-flow-row justify-center">
                                 <h1 className="Michroma text-7xl leading-normal text- text-white">
