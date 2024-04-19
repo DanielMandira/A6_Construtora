@@ -2,6 +2,17 @@ import React from "react";
 import ArrowRD from '../assets/icons/ArrowRD.svg'
 import Carousel from "../components/carousel";
 import data from '../data/carouseldata'
+import ArrowD from '../assets/icons/ArrowD.svg'
+import Lateral from '../assets/imgs/lateral.webp'
+import Residencial from '../assets/imgs/residencial.webp'
+import Remodelacao from '../assets/imgs/remodelacao.webp'
+import Manutencao from '../assets/imgs/manutencao_reparos.webp'
+import Projetos from '../assets/imgs/gerenciamento_projetos.webp'
+import Obras from '../assets/imgs/gerenciamento_obra.webp'
+import Comercial from '../assets/imgs/galpao_comercial.webp'
+import EdIndustrial from '../assets/imgs/edIndustrial.webp'
+import Engenharia from '../assets/imgs/design_engenharia.webp'
+
 const Home = () => {
     return (
         <>
@@ -15,7 +26,7 @@ const Home = () => {
                         <div className="my-28 mx-60">
                             {/* Slogan */}
                             <div className="grid grid-flow-row justify-center">
-                                <h1 className="Michroma text-7xl text-white content-start justify-self-start">
+                                <h1 className="Michroma text-7xl leading-normal text- text-white content-start justify-self-start">
                                     SUA <br />
                                     FUNDAÇÃO<br />
                                     PARA O <br />
@@ -26,7 +37,7 @@ const Home = () => {
                                 <br />
                                 {/* Texto sobre a empresa */}
                                 <div className="grid">
-                                    <p className=" Sora text-lg text-white content-center justify-self-center max-w-2xl" >
+                                    <p className=" Sora text-lg break-all text-white content-center justify-self-center max-w-2xl" >
                                         A A6 Construtora é uma construtora de Goiânia - GO dedicada a oferecer soluções inovadoras e de alta qualidade para uma ampla gama de projetos residenciais e industriais.</p>
                                     <br />
                                 </div>
@@ -45,14 +56,14 @@ const Home = () => {
                     {/* Fotos Principais Serviçoes */}
                     <div className="grid grid-cols-2  justify-items-center border-white border-e  me-5">
                         <div className="border  border-white my-10 max-w-96">
-                            <img className=" grayscale  w-96 h-40" src="https://s3-alpha-sig.figma.com/img/1829/6b5a/446523c4de4bf5af2c730eb65b32b860?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Acvw0YuQxfOW4IttvavP~iSFIY3sp8qDY8P-0xmcb6YUXpykJMncZjZ2uvUJvY~EJylSGItwm6YZh8hAIDk4UOQg0nk30~bE-J2RHgjmYMXtF0xGnUN6B-dNq-ksa-7XcX48~NFpodLJomF8Kz8jD7Qdbh13sTPon2sVI0hMf9iFg0Lx3cEq6AMpvLWX9v3X-gO-jLe2MrhCM1oFfx4BwHHkSZLj1T5rwUBGjXjtl1bUjkVEX0QdztOm9Qd1cZx6rYFxMegt8vSw8hcSAeMg8QxXAKIP5NeIk7q89wo0iD-fDAKT-2gwW2Z5skqlr6oXRwvydPfo66w1HeLBEmoWsg__" />
+                            <img className=" grayscale  w-96 h-40" src={Obras} />
                             <div className="m-3">
                                 <p className="Sora text-white">Gerenciamento e fiscalização de obra</p>
                                 <a className="Sora cursor-pointer text-laranja-primary">Ver mais +</a>
                             </div>
                         </div>
                         <div className="border border-white my-10 max-w-96">
-                            <img className=" grayscale w-96 h-40" src="https://s3-alpha-sig.figma.com/img/3c58/f388/35e39a4c3d4debde225dfaa477cb5bb3?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XJb7-vIvPIftwl7fuHmf-hYdi42uG4buRTCmgk84h-Is5PMhPENGv3DBOCqzQ8RilTPNGz8bKQFN~O6BNY98EDV4Xyl8u5c01KWSD0HP~jNsqtaCbnWq7MzSObvvFNMyw5MBaX6QSxmmYqFfR~9ffGHWFc3tyX5DeqiAeQIa~P-0MTDm1v~oZle73Kw50IqWDjKFx6UUfmdPZWOOyMLsd2125eWkMwMEt~pozYGgAqCptcxQR3ZWFNwJBA83QUOgqei2xKFaoAeBbx4vKHVHTu0BmtJZ6PJ5lZaB1PVEGrkeVZt7xCWilGxGQ484O05DdomJq-gNQmLau~6AtYrlGA__" />
+                            <img className=" grayscale w-96 h-40" src={Comercial} />
                             <div className="m-3">
                                 <p className="Sora text-white">Planejamento e realização de um Galpão Comercial</p>
                                 <a className=" Sora text-laranja-primary cursor-pointer ">Ver mais +</a>
@@ -61,8 +72,8 @@ const Home = () => {
                     </div>
                 </div>
                 {/* Imagem Grande Lateral */}
-                <div className=" grid grid-flow-col content-center border-white border-e">
-                    <img className="image-initial w-544 max-h-full p-10" src="https://s3-alpha-sig.figma.com/img/ba36/ab9b/67126f16b01a6f4edd9e588f9b387604?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TG8jwb8OO09Hsxijj-b1PZfimfNrvnoWjfxYDfX0GFT3hVOXCW-wrSkKdSyIQ-gu8xHUlRnhbE4N5mqbp~DeftThQ9PDcBP7leOvYw51jLa1YQpTMtJDGjwwKbhCbICxQHH0XmoZ2zsLu7KmzKGU5H3hZatMpFEnF6obePqplEs-GMuOT3J0qvhbnLYTNFkBR6DFnSAAIMFyeSNsTcHyjGM2KPoMJm~e9~fUe2FFUJuT9YGY-Nw7hQ03D4wHOr93q3wJou57Wh7VjRYeoVsRZdwvEpnyIAW057uHykoM8Dv8WTkXCcjbmEA5BXB6aSbsaQmt5SS1zqtJ3YmDGgcTKQ__" />
+                <div className=" grid grid-flow-col border-white border-e">
+                    <img className="image-initial w-544 h-full p-10" src={Lateral} />
                 </div>
                 {/* Div vazia das bordas */}
                 <div className="w-10"></div>
@@ -89,6 +100,29 @@ const Home = () => {
                 <h2 className="Michroma text-4xl text-white ">SERVIÇOS</h2>
                 <Carousel data={data} />
             </section>
+            <br/>
+            {/* Como Trabalhamos */}
+            <section className="grid grid-flow-row text-center mx-10">
+                <div className="grid grid-flow-row my-28">
+                <p className="Sora text-2xl text-laranja-primary">Como Trabalhamos</p>
+                <h3 className="Michroma leading-snug text-white text-7xl ">DO PLANEJAMENTO<br/> À CONCRETIZAÇÃO</h3>
+                </div>
+                <div className="grid grid-flow-col">
+                    <div > 
+                    <iframe width="706" height="433" src="https://www.youtube.com/embed/3E_8kK9VFPs?controls=0" title="Pica-Pau em português | Compilação de episódios | Desenhos Animados | Pica Pau Antigo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div className="grid grid-flow-row border border-white text-start p-10 ms-5">
+                        <h2 className=" text-white Michroma text-5xl">SOBRE NÓS</h2>
+                        <p className=" text-white text-lg Sora break-words text-justify">Nosso foco principal é fornecer expertise profissional em todos os aspectos da construção, desde o planejamento e design até a execução e conclusão do projeto. Acreditamos que a excelência é alcançada através da combinação de conhecimento técnico, criatividade e atenção aos detalhes, e isso se reflete em cada projeto que realizamos.</p>
+                        <div className="grid grid-flow-col justify-start ">
+                        <h3 className="text-white text-2xl max-w-80 sora">Conheça os <span className=" text-laranja-primary">benefícios</span> de trabalhar com a equipe de especialistas da A6</h3>
+                        <img className="border border-white rounded-full p-3 hover:bg-laranja-primary scale-105" src={ArrowD} />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br />
+            {/* Como Construimos */}
         </>
     )
 }

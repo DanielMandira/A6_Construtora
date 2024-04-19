@@ -5,7 +5,7 @@ import Footer from './components/footer'
 function App() {
   return (
     <>
-    <div className='bg-black mx-auto grid grid-flow-row justify-center max-w-160'> 
+    <div className='bg-black mx-auto grid grid-flow-row justify-center max-w-155'> 
       <NavBar />
       <Outlet/>
       <Footer/>
