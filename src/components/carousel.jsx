@@ -31,7 +31,7 @@ const Carousel = ({data}) =>{
         <div className="bg-black grid grid-flow-col ">
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + 4).map((d) => (
             <div className="border border-white mx-2"> 
-                <img className="w-96 h-40 grayscale hover:grayscale-0" src={d.src}/>
+                <img className="w-96 h-40 grayscale " src={d.src}/>
             <div className="p-3 grid grid-flow-row text-center content-baseline h-32">
                 <p className="Sora text-white">{d.info}</p>
                 <a className="Sora text-laranja-primary cursor-pointer">+ Saiba Mais</a>
