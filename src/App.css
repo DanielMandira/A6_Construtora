@@ -1,4 +1,7 @@
+.radial{
+background: radial-gradient(ellipse at 75% 20% ,#ff77001a, #0000001a);
 
+}
 
 .Michroma{
     font-family: Michroma;

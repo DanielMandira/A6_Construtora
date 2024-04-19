@@ -4,14 +4,8 @@ import Carousel from "../components/carousel";
 import data from '../data/carouseldata'
 import ArrowD from '../assets/icons/ArrowD.svg'
 import Lateral from '../assets/imgs/lateral.webp'
-import Residencial from '../assets/imgs/residencial.webp'
-import Remodelacao from '../assets/imgs/remodelacao.webp'
-import Manutencao from '../assets/imgs/manutencao_reparos.webp'
-import Projetos from '../assets/imgs/gerenciamento_projetos.webp'
 import Obras from '../assets/imgs/gerenciamento_obra.webp'
 import Comercial from '../assets/imgs/galpao_comercial.webp'
-import EdIndustrial from '../assets/imgs/edIndustrial.webp'
-import Engenharia from '../assets/imgs/design_engenharia.webp'
 
 const Home = () => {
     return (
@@ -26,7 +20,7 @@ const Home = () => {
                         <div className="my-28 mx-60">
                             {/* Slogan */}
                             <div className="grid grid-flow-row justify-center">
-                                <h1 className="Michroma text-7xl leading-normal text- text-white content-start justify-self-start">
+                                <h1 className="Michroma text-7xl leading-normal text- text-white">
                                     SUA <br />
                                     FUNDAÇÃO<br />
                                     PARA O <br />
@@ -37,7 +31,7 @@ const Home = () => {
                                 <br />
                                 {/* Texto sobre a empresa */}
                                 <div className="grid">
-                                    <p className=" Sora text-lg break-all text-white content-center justify-self-center max-w-2xl" >
+                                    <p className=" Sora text-lg text-white content-center justify-self-center" >
                                         A A6 Construtora é uma construtora de Goiânia - GO dedicada a oferecer soluções inovadoras e de alta qualidade para uma ampla gama de projetos residenciais e industriais.</p>
                                     <br />
                                 </div>
@@ -73,7 +67,7 @@ const Home = () => {
                 </div>
                 {/* Imagem Grande Lateral */}
                 <div className=" grid grid-flow-col border-white border-e">
-                    <img className="image-initial w-544 h-full p-10" src={Lateral} />
+                    <img className="image-initial max-w-500 h-full p-10" src={Lateral} />
                 </div>
                 {/* Div vazia das bordas */}
                 <div className="w-10"></div>

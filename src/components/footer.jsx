@@ -7,7 +7,7 @@ import whats from '../assets/icons/whatsapp.svg'
 const Footer = () => {
     return (
         <>
-            <section className="mt-20 grid grid-flow-col border-t border-white">
+            <section className="mt-20 grid grid-flow-col max-w-155 border-t border-white">
                 <div className=" text-white m-16">
                     <h1 className="Sora text-laranja-primary text-5xl">A6 CONSTRUTORA</h1>
                     <p className=" Sora text-md text-white content-center justify-self-center max-w-lg my-6" >

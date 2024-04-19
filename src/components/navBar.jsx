@@ -4,7 +4,7 @@ import Home from '../routes/home'
 
 const NavBar = () => {
 return(
-<header className="Sora grid grid-flow-col text-nowrap max-w-160 border-white text-center text-white">
+<header className="Sora grid grid-flow-col text-nowrap max-w-155 border-white text-center text-white">
 <div className=" border-e border-white w-10"></div>
 <div className=" border-e border-white content-center ">
 <h1 className=' text-laranja-primary lg:text-3xl'>A6 Construtora</h1>

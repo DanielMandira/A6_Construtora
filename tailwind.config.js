@@ -13,11 +13,11 @@ export default {
     
     extend: {
       width:{
-        '544': '544px' 
+        '500': '500px' 
       },
       maxWidth:{
           '155': '1550px',
-          '544': '544px'
+          '500': '500px'
       }
     },
   },
