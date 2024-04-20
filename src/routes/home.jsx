@@ -110,7 +110,6 @@ const Home = () => {
                 </div>
                 <div className="grid grid-flow-row lg:grid-flow-col">
                     <div className="grid grid-flow-col justify-center" > 
-                    <iframe className=" w-79 h-48" src="https://www.youtube.com/embed/3E_8kK9VFPs?controls=0" title="Pica-Pau em português | Compilação de episódios | Desenhos Animados | Pica Pau Antigo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div className="grid grid-flow-row gap-5 text-center border border-white lg:text-start p-5 lg:ms-5">
                         <h2 className=" text-white Michroma text-2xl lg:text-5xl">SOBRE NÓS</h2>
