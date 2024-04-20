@@ -5,7 +5,7 @@ import Footer from './components/footer'
 function App() {
   return (
     <>
-    <div className='radial bg-black mx-auto grid grid-flow-row justify-center max-w-155'> 
+    <div className='radial radial-2 justify-center grid grid-flow-row mx-auto max-w-155'> 
       <NavBar />
       <Outlet/>
       <Footer/>
