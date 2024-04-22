@@ -22,3 +22,7 @@
     width: 544px;
     height: 874px;
 }
+.stroke{
+    -webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color: #ff7500;
+}

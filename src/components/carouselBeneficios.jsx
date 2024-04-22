@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react"
 import arrow from '../assets/icons/arrow.svg'
 // Função seta do carousel
-const Carousel = ({ data }) => {
+const CarouselBeneficios = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [numItemsShow, setNumItemsShow] = useState(4)
-  const carouselRef = useRef(null)
+  const carouselBeneRef = useRef(null)
   const startXRef = useRef(0)
 
   // Função para mudar o carousel por arrasto
@@ -28,7 +28,7 @@ const Carousel = ({ data }) => {
   
     const currentX = event.clientX || event.changedTouches[0].clientX;
     const deltaX = currentX - startXRef.current;
-    const threshold = carouselRef.current.offsetWidth * 0.2;
+    const threshold = carouselBeneRef.current.offsetWidth * 0.2;
   
     if (deltaX > threshold) {
       handleSlideChange("prev");
@@ -42,7 +42,7 @@ const Carousel = ({ data }) => {
     const handleResize = () => {
       const windowWidth = window.innerWidth
       if (windowWidth >= 1024) {
-        setNumItemsShow(4)
+        setNumItemsShow(2)
       } else if (windowWidth >= 768) {
         setNumItemsShow(3)
       } else {
@@ -62,19 +62,20 @@ const Carousel = ({ data }) => {
       {data.length > numItemsShow && (
         <div className="grid grid-flow-col justify-center gap-24 top-88 md:justify-end md:bottom-8 md:top-auto md:gap-5 relative">
           <button className="flex justify-center text-white border w-24 hover:bg-laranja-primary duration-500 border-white rounded-full "
-            onClick={()=> handleSlideChange("prev")}
+            onClick={() => handleSlideChange("prev")}
           >
             <img className="p-2" src={arrow} />
           </button>
           <button className="flex justify-center text-white border  hover:bg-laranja-primary duration-500 border-white rounded-full w-24"
-            onClick={()=> handleSlideChange("next")}
+            onClick={() => handleSlideChange("next")}
           >
             <img className="p-2 rotate-180" src={arrow} />
           </button>
         </div>
       )}
-      <div className="carousel grid grid-flow-row md:grid-flow-col justify-center "
-      ref={carouselRef}
+      {/* Carousel container com funcioalidade de arrasto  */}
+      <div className="carouselBene grid grid-flow-row md:grid-flow-col justify-center "
+      ref={carouselBeneRef}
       onMouseDown={handleDragStart}
       onMouseUp={handleDragEnd}
       onTouchStart={handleDragStart}
@@ -82,10 +83,18 @@ const Carousel = ({ data }) => {
       >
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + numItemsShow).map((d) => (
           <div className="border h-485 md:h-auto border-white md:mx-2">
-            <img className="w-72 h-96 md:w-96 md:h-40 grayscale " src={d.src} />
+            <div className="relative">
+              <img className="w-72 h-96 md:w-96 md:h-40 grayscale" src={d.src} />
+              <div className="bg-laranja-primary size-16 absolute z-10 right-0 bottom-0">
+                <img className="p-2" src={d.icon} />
+              </div>
+            </div>
             <div className="p-3 grid grid-flow-row text-center content-baseline md:h-32 justify-items-center justify-self-center">
-              <p className="Sora text-white text-xl max-w-72 lg:text-2xl">{d.info}</p>
-              <a className="Sora text-laranja-primary cursor-pointer text-base">+ Saiba Mais</a>
+              <div className="grid grid-flow-col items-center gap-3">
+              <h2 className="Michroma text-laranja-primary text-6xl">{d.id}</h2>
+              <h2 className="Michroma text-white text-base">{d.title}</h2>
+                </div>
+              <p className="Sora text-white text-base">{d.info}</p>
             </div>
           </div>
 
@@ -98,5 +107,5 @@ const Carousel = ({ data }) => {
 
   )
 }
-export default Carousel
+export default CarouselBeneficios
 
