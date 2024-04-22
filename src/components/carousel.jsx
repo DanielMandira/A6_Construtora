@@ -41,9 +41,10 @@ const Carousel = ({ data }) => {
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = window.innerWidth
-      if (windowWidth >= 1024) {
+      console.log(windowWidth)
+      if (windowWidth > 1124) {
         setNumItemsShow(4)
-      } else if (windowWidth >= 768) {
+      } else if (windowWidth > 768) {
         setNumItemsShow(3)
       } else {
         setNumItemsShow(1)
@@ -81,8 +82,8 @@ const Carousel = ({ data }) => {
       onTouchEnd={handleDragEnd}
       >
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + numItemsShow).map((d) => (
-          <div className="border h-485 md:h-auto border-white md:mx-2">
-            <img className="w-72 h-96 md:w-96 md:h-40 grayscale " src={d.src} />
+          <div className="border h-485 md:h-auto w-80 border-white md:mx-2">
+            <img className="w-full h-96 md:w-96 md:h-40 grayscale " src={d.src} />
             <div className="p-3 grid grid-flow-row text-center content-baseline md:h-32 justify-items-center justify-self-center">
               <p className="Sora text-white text-xl max-w-72 lg:text-2xl">{d.info}</p>
               <a className="Sora text-laranja-primary cursor-pointer text-base">+ Saiba Mais</a>
