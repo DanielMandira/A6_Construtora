@@ -110,11 +110,13 @@ const Home = () => {
             </div>
             <br />
             {/* Carrossel */}
-            <section className="mx-10 grid mt-24 ">
+            <section className="mx-10 grid grid-flow-row mt-24 ">
                 <div className="grid justify-center md:justify-start">
                     <h2 className="Michroma text-4xl text-white ">SERVIÇOS</h2>
                 </div>
+                <div className="grid grid-flow-col">
                 <Carousel data={data} />
+                </div>
             </section>
             <br />
             {/* Como Trabalhamos */}
@@ -223,17 +225,17 @@ const Home = () => {
                         </div>
                         {/* Projeto 1 */}
                         <div className="grid grid-flow-row justify-items-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border md:h-full">
-                            <div className=" md:w-406 md:h-481 lg:w-full lg:h-642 justify-self-center relative grid ">
+                            <div className=" md:w-500 md:h-481 lg:w-full lg:h-642 justify-self-center relative grid ">
                                 {/* Mouse Hover Icon */}
                                 <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
-                                    <img className="size-14 opacity-50" src={Mouse} />
-                                    <p className=" sora text-xs text-white">Passe o mouse <br /> acima da imagem</p>
+                                    <img className="size-4 md:size-8 lg:size-14 opacity-50" src={Mouse} />
+                                    <p className=" sora text-xs text-white opacity-50">Passe o mouse <br /> acima da imagem</p>
                                 </div>
                                 {/* A6 Icon */}
                                 <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3">
-                                    <p className="Sora py-5 px-3 stroke-laranja-primary stroke text-transparente text-5xl">A6</p>
+                                    <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                                 </div>
-                                <img src={Obra1} className="grayscale hover:grayscale-0 duration-300  md:w-406 lg:w-full" />
+                                <img src={Obra1} className="grayscale hover:grayscale-0 duration-300  md:w-500 lg:w-full" />
                             </div>
                             <h3 className="Michroma text-base text-white lg:text-5xl">GERENCIAMENTO DE OBRA</h3>
                             <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
@@ -247,12 +249,12 @@ const Home = () => {
                             <div className="md:w-406 md:h-316 lg:w-full lg:h-393 justify-self-center relative grid ">
                                 {/* Mouse Hover Icon */}
                                 <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
-                                    <img className="size-14 opacity-50" src={Mouse} />
-                                    <p className=" sora text-xs text-white">Passe o mouse <br /> acima da imagem</p>
+                                    <img className="size-4 md:size-8 lg:size-14 opacity-50" src={Mouse} />
+                                    <p className=" sora text-xs text-white opacity-50">Passe o mouse <br /> acima da imagem</p>
                                 </div>
                                 {/* A6 Icon */}
                                 <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3">
-                                    <p className="Sora py-5 px-3 stroke-laranja-primary stroke text-transparente text-5xl">A6</p>
+                                    <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                                 </div>
                                 <img src={Obra2} className="grayscale hover:grayscale-0 duration-300 md:w-406 md:h-316 lg:w-full lg:h-393 " />
                             </div>
@@ -270,12 +272,12 @@ const Home = () => {
                             <div className=" md:w-406 md:h-481 lg:w-full lg:h-642 justify-self-center  relative grid ">
                                 {/* Mouse Hover Icon */}
                                 <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
-                                    <img className="size-14 opacity-50" src={Mouse} />
-                                    <p className=" sora text-xs text-white">Passe o mouse <br /> acima da imagem</p>
+                                    <img className="size-4 md:size-8 lg:size-14 opacity-50" src={Mouse} />
+                                    <p className=" sora text-xs text-white opacity-50">Passe o mouse <br /> acima da imagem</p>
                                 </div>
                                 {/* A6 Icon */}
                                 <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8">
-                                    <p className="Sora py-5 px-3 stroke-laranja-primary stroke text-transparente text-5xl">A6</p>
+                                    <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                                 </div>
                                 <img src={Obra3} className="grayscale hover:grayscale-0 duration-300  md:w-406 md:h-481 lg:w-full lg:h-642" />
                             </div>
@@ -291,12 +293,12 @@ const Home = () => {
                             <div className=" md:w-406 md:h-481 lg:w-full lg:h-642 justify-self-center  relative grid ">
                                 {/* Mouse Hover Icon */}
                                 <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
-                                    <img className="size-14 opacity-50" src={Mouse} />
-                                    <p className=" sora text-xs text-white">Passe o mouse <br /> acima da imagem</p>
+                                    <img className="size-4 md:size-8 lg:size-14 opacity-50" src={Mouse} />
+                                    <p className=" sora text-xs text-white opacity-50">Passe o mouse <br /> acima da imagem</p>
                                 </div>
                                 {/* A6 Icon */}
                                 <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8">
-                                    <p className="Sora py-5 px-3 stroke-laranja-primary stroke text-transparente text-5xl">A6</p>
+                                    <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                                 </div>
                                 <img src={Obra4} className="grayscale hover:grayscale-0 duration-300  md:w-406 md:h-481 lg:w-full lg:h-642" />
                             </div>
