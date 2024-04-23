@@ -18,10 +18,6 @@
     src: url(../src/assets/fonts/Sora-VariableFont_wght.ttf);
 }
 
-.image-initial{
-    width: 544px;
-    height: 874px;
-}
 .stroke{
     -webkit-text-stroke-width:1px;
     -webkit-text-stroke-color: #ff7500;

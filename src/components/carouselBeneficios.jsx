@@ -40,7 +40,7 @@ const CarouselBeneficios = ({ data }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      const windowWidth = window.innerWidth
+      const windowWidth = document.body.clientWidth
       if (windowWidth >= 1024) {
         setNumItemsShow(2)
       } else if (windowWidth >= 768) {
@@ -60,21 +60,21 @@ const CarouselBeneficios = ({ data }) => {
     <section className="grid grid-flow-row">
       {/* Botões de navegação */}
       {data.length > numItemsShow && (
-        <div className="grid grid-flow-col justify-center gap-24 top-88 md:justify-end md:bottom-8 md:top-auto md:gap-5 relative">
+           <div className="grid grid-flow-col justify-center gap-24 top-97 md:justify-end md:-bottom-82 md:top-auto md:gap-5 relative">
           <button className="flex justify-center text-white border w-24 hover:bg-laranja-primary duration-500 border-white rounded-full "
             onClick={() => handleSlideChange("prev")}
           >
             <img className="p-2" src={arrow} />
           </button>
-          <button className="flex justify-center text-white border  hover:bg-laranja-primary duration-500 border-white rounded-full w-24"
+          <button className="flex justify-center text-white border hover:bg-laranja-primary duration-500 border-white rounded-full w-24"
             onClick={() => handleSlideChange("next")}
           >
-            <img className="p-2 rotate-180" src={arrow} />
+            <img className="p-2 rotate-180 hover:brightness-0 " src={arrow} />
           </button>
         </div>
       )}
       {/* Carousel container com funcioalidade de arrasto  */}
-      <div className="carouselBene grid grid-flow-row md:grid-flow-col justify-center "
+      <div className="carouselBene grid grid-flow-row md:grid-flow-col gap-5 justify-center "
       ref={carouselBeneRef}
       onMouseDown={handleDragStart}
       onMouseUp={handleDragEnd}
@@ -82,19 +82,19 @@ const CarouselBeneficios = ({ data }) => {
       onTouchEnd={handleDragEnd}
       >
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + numItemsShow).map((d) => (
-          <div className="border h-485 md:h-auto border-white md:mx-2">
+          <div className="border w-80 md:w-96 border-white md:mx-2">
             <div className="relative">
-              <img className="w-72 h-96 md:w-96 md:h-40 grayscale" src={d.src} />
+              <img className="w-full h-96 md:w-full md:h-40 grayscale" src={d.src} />
               <div className="bg-laranja-primary size-16 absolute z-10 right-0 bottom-0">
                 <img className="p-2" src={d.icon} />
               </div>
             </div>
-            <div className="p-3 grid grid-flow-row text-center content-baseline md:h-32 justify-items-center justify-self-center">
+            <div className="p-3 gap-5 grid grid-flow-row text-center content-baseline min-h-52 h-full justify-items-center justify-self-center">
               <div className="grid grid-flow-col items-center gap-3">
               <h2 className="Michroma text-laranja-primary text-6xl">{d.id}</h2>
-              <h2 className="Michroma text-white text-base">{d.title}</h2>
+              <h2 className="Michroma text-white text-center md:text-start text-base">{d.title}</h2>
                 </div>
-              <p className="Sora text-white text-base">{d.info}</p>
+              <p className="Sora text-white md:text-start text-sm lg:text-base">{d.info}</p>
             </div>
           </div>
 
