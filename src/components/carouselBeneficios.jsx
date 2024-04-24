@@ -60,7 +60,7 @@ const CarouselBeneficios = ({ data }) => {
     <section className="grid grid-flow-row">
       {/* Botões de navegação */}
       {data.length > numItemsShow && (
-           <div className="grid grid-flow-col justify-center gap-24 top-97 md:justify-end md:-bottom-82 md:top-auto md:gap-5 relative">
+           <div className="grid grid-flow-col justify-center gap-24 top-97 md:justify-end md:-left-20 lg:left-0 md:-bottom-82 md:top-auto md:gap-5 relative">
           <button className="flex justify-center text-white border w-24 hover:bg-laranja-primary duration-500 border-white rounded-full "
             onClick={() => handleSlideChange("prev")}
           >
@@ -82,9 +82,9 @@ const CarouselBeneficios = ({ data }) => {
       onTouchEnd={handleDragEnd}
       >
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + numItemsShow).map((d) => (
-          <div className="border w-80 md:w-96 border-white md:mx-2">
-            <div className="relative">
-              <img className="w-full h-96 md:w-full md:h-40 grayscale" src={d.src} />
+          <div className="border border-white md:mx-2 max-w-80">
+            <div className="relative w-full h-96 md:h-40">
+              <img className=" w-full h-full object-cover md:h-40 grayscale" src={d.src} />
               <div className="bg-laranja-primary size-16 absolute z-10 right-0 bottom-0">
                 <img className="p-2" src={d.icon} />
               </div>

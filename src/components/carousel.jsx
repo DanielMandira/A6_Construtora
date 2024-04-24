@@ -25,23 +25,22 @@ const Carousel = ({ data }) => {
   const handleDragEnd = (event) => {
     document.removeEventListener("mouseup", handleDragEnd);
     document.removeEventListener("touchend", handleDragEnd);
-  
+
     const currentX = event.clientX || event.changedTouches[0].clientX;
     const deltaX = currentX - startXRef.current;
     const threshold = carouselRef.current.offsetWidth * 0.2;
-  
+
     if (deltaX > threshold) {
       handleSlideChange("prev");
     } else if (deltaX < -threshold) {
       handleSlideChange("next");
     }
   };
-  
+
   //  Ajustar o numero de itens baseado no tamaho da tela
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = document.body.clientWidth
-      console.log(windowWidth)
       if (windowWidth >= 1124) {
         setNumItemsShow(4)
       } else if (windowWidth >= 768) {
@@ -61,31 +60,33 @@ const Carousel = ({ data }) => {
     <section className="grid grid-flow-row ">
       {/* Botões de navegação */}
       {data.length > numItemsShow && (
-        <div className="grid grid-flow-col justify-center gap-24 top-88 md:justify-end md:bottom-8 md:top-auto md:gap-5 relative ">
+        <div className="grid grid-flow-col justify-center gap-48 top-110 md:justify-end md:bottom-8 md:top-auto md:gap-5 relative ">
           <button className="flex justify-center text-white border w-24 hover:bg-laranja-primary duration-500 border-white rounded-full "
-            onClick={()=> handleSlideChange("prev")}
+            onClick={() => handleSlideChange("prev")}
           >
             <img className="p-2" src={arrow} />
           </button>
           <button className="flex justify-center text-white border  hover:bg-laranja-primary duration-500 border-white rounded-full w-24"
-            onClick={()=> handleSlideChange("next")}
+            onClick={() => handleSlideChange("next")}
           >
             <img className="p-2 rotate-180" src={arrow} />
           </button>
         </div>
       )}
       <div className="carousel grid grid-flow-row md:grid-flow-col gap-5 justify-center"
-      ref={carouselRef}
-      onMouseDown={handleDragStart}
-      onMouseUp={handleDragEnd}
-      onTouchStart={handleDragStart}
-      onTouchEnd={handleDragEnd}
+        ref={carouselRef}
+        onMouseDown={handleDragStart}
+        onMouseUp={handleDragEnd}
+        onTouchStart={handleDragStart}
+        onTouchEnd={handleDragEnd}
       >
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + numItemsShow).map((d) => (
-          <div className="border w-80 h-full md:w-96  border-white">
-            <img className="w-full h-96 md:h-40 grayscale" src={d.src} />
-            <div className="p-3 grid grid-flow-row text-center content-baseline md:h-32 justify-items-center justify-self-center">
-              <p className="Sora text-white text-xl max-w-72 lg:text-2xl">{d.info}</p>
+          <div className=" border w-96 border-white">
+            <div className="w-full h-82">
+              <img className=" h-full w-full object-cover grayscale" src={d.src} />
+            </div>
+            <div className="p-3 grid grid-flow-row text-center content-baseline justify-items-center justify-self-center">
+              <p className="Sora text-white text-lg md:text-xl lg:text-2xl">{d.info}</p>
               <a className="Sora text-laranja-primary cursor-pointer text-base">+ Saiba Mais</a>
             </div>
           </div>
