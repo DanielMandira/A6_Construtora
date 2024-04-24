@@ -5,7 +5,7 @@ import Footer from './components/footer'
 function App() {
   return (
     <>
-    <div className='radial max-w-155'> 
+    <div className='radial'> 
       <NavBar />
       <Outlet/>
       <Footer/>

@@ -99,10 +99,7 @@ const CarouselBeneficios = ({ data }) => {
           </div>
 
         ))}
-
-
       </div>
-
     </section>
 
   )
