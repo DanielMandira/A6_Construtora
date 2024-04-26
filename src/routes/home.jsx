@@ -25,7 +25,7 @@ import EmailWhite from '../assets/icons/email-white.svg'
 
 const Home = () => {
     return (
-        <> 
+        <>
             {/* Inicio da Home */}
             <section className="grid grid-flow-row md:grid-flow-col border-white md:border-b white ">
                 {/* Div vazia das bordas */}
@@ -53,7 +53,7 @@ const Home = () => {
                                 </div>
                                 {/* Botão Para Contato */}
                                 <div className="grid">
-                                    <button className="flex Sora items-center border text-white border-white rounded-full  justify-self-start  text-base text-nowrap p-2 md:p-5 hover:bg-laranja-primary duration-300 ">
+                                    <button className="flex Sora items-center border text-white border-white rounded-full  justify-self-start  text-base text-nowrap p-2 md:p-4 hover:bg-laranja-primary duration-300 ">
                                         <div className="border border-white rounded-full">
                                             <img className="p-3 w-12 md:p-4 md:w-16 " src={ArrowRD} />
                                         </div>
@@ -64,15 +64,15 @@ const Home = () => {
                         </div>
                     </div>
                     {/* Fotos Principais Serviçoes */}
-                    <div className="grid grid-flow-row md:grid-flow-col justify-around md:justify-center gap-5 p-10 border-white lg:border-e  lg:me-5">
-                        <div className="border  border-white my-10 max-w-88">
+                    <div className="grid grid-flow-row md:grid-flow-col justify-around md:justify-center gap-5 border-white lg:border-e  lg:me-5">
+                        <div className="border border-white my-5 md:my-10 max-w-72 lg:max-w-88">
                             <img className=" object-cover grayscale" src={Obras} />
                             <div className="p-4">
                                 <p className="Sora text-sm lg:text-base text-white">Gerenciamento e fiscalização de obra</p>
                                 <a className="Sora text-sm lg:text-base cursor-pointer text-laranja-primary">Ver mais +</a>
                             </div>
                         </div>
-                        <div className="border border-white m:w-36 my-10 max-w-88">
+                        <div className="border border-white m:w-36 md:my-10 max-w-72 lg:max-w-88">
                             <img className=" object-cover grayscale" src={Comercial} />
                             <div className="p-4">
                                 <p className="Sora text-sm lg:text-base text-white">Planejamento e realização de um Galpão Comercial</p>
@@ -113,7 +113,7 @@ const Home = () => {
             <br />
             {/* Carrossel */}
             <section className="px-7 md:mx-10 xs:mx-20 grid grid-flow-row mt-24 ">
-                <div className="grid justify-center md:justify-start">
+                <div className="grid justify-center md:justify-start relative lg:left-16">
                     <h2 className="Michroma text-4xl text-white ">SERVIÇOS</h2>
                 </div>
                 <div className="grid grid-flow-col">
@@ -142,7 +142,7 @@ const Home = () => {
                     </div>
                 </div>
                 {/* Como Construimos */}
-                <div  className="hidden md:grid grid-flow-row md:mx-10 xs:mx-20 my-28">
+                <div className="hidden md:grid grid-flow-row md:mx-10 xs:mx-20 my-28">
                     <div className="md:grid hidden grid-flow-col lg:justify-between">
                         <div className=" md:grid hidden my-10 grid-flow-row text-center lg:text-start ">
                             <h1 className="Michroma text-white text-3xl lg:text-5xl ">COMO <br className="hidden lg:grid" />CONSRUÍMOS?</h1>
@@ -219,14 +219,14 @@ const Home = () => {
                 <br />
                 {/* Portifolio de projetos */}
                 <div id="projetos" className="grid grid-flow-row justify-center content-center justify-self-center  md:grid-cols-2  my-16 gap-5 lg:mt-56 md:justify-start md:mx-10 xs:mx-20">
-                    <div className="grid grid-flo gap-10">
+                    <div className="grid grid-flow-row gap-5">
                         {/* Titulo */}
                         <div className="">
                             <h2 className="Michroma text-2xl md:text-3xl lg:text-5xl text-white text-center md:text-start">POTIFOLIO DE <br /><span className=" text-laranja-primary">PROJETOS</span></h2>
                             <p className="Sora text-white hidden lg:grid text-start">Vislumbre o que podemos fazer!</p>
                         </div>
                         {/* Projeto 1 */}
-                        <div className="grid grid-flow-row justify-items-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border ">
+                        <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border  max-w-88 lg:max-w-full ">
                             <div className="justify-self-center relative grid ">
                                 {/* Mouse Hover Icon */}
                                 <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
@@ -237,17 +237,19 @@ const Home = () => {
                                 <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3 opacity-50 hidden md:grid">
                                     <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                                 </div>
-                                <img src={Obra1} className="grayscale hover:grayscale-0 duration-300  object-contain " />
+                                <img src={Obra1} className="grayscale hover:grayscale-0 duration-300  object-contain size-full " />
                             </div>
+                            <div className="grid gap-5">
                             <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GERENCIAMENTO DE OBRA</h3>
                             <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
                             <div className="grid md:grid-flow-col self-center items-center gap-5">
                                 <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
                                 <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
                             </div>
+                            </div>
                         </div>
                         {/* Projeto 2 */}
-                        <div className="grid grid-row justify-items-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start content-end border-white border">
+                        <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border  max-w-88 lg:max-w-full">
                             <div className="justify-self-center relative grid ">
                                 {/* Mouse Hover Icon */}
                                 <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
@@ -258,19 +260,21 @@ const Home = () => {
                                 <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3 opacity-50 hidden md:grid">
                                     <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                                 </div>
-                                <img src={Obra2} className="grayscale hover:grayscale-0 duration-300" />
+                                <img src={Obra2} className="grayscale hover:grayscale-0 duration-300 size-full" />
                             </div>
+                            <div className="grid gap-5">
                             <h3 className="Michroma text-base text-white md:text-3xl lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">ADEQUAÇÃO DE SALA COMERCIAL</h3>
                             <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
                             <div className="grid md:grid-flow-col self-center items-center gap-5">
                                 <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
                                 <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
                             </div>
+                            </div>
                         </div>
                     </div>
                     {/* Projeto 3 */}
-                    <div className="grid grid-flow-row gap-10">
-                        <div className="grid grid-row justify-items-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start content-end border-white border">
+                    <div className="grid grid-flow-row gap-5">
+                        <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border  max-w-88 lg:max-w-full ">
                             <div className="justify-self-center  relative grid ">
                                 {/* Mouse Hover Icon */}
                                 <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
@@ -281,17 +285,19 @@ const Home = () => {
                                 <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8 opacity-50 hidden md:grid">
                                     <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                                 </div>
-                                <img src={Obra3} className="grayscale hover:grayscale-0 duration-300" />
+                                <img src={Obra3} className="grayscale hover:grayscale-0 duration-300 size-full" />
                             </div>
+                            <div className="grid gap-0">
                             <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GALPÃO <br /> INDUSTRIAL</h3>
                             <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
                             <div className="grid md:grid-flow-col self-center items-center gap-5">
                                 <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
                                 <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
                             </div>
+                            </div>
                         </div>
                         {/* Pojeto 4 */}
-                        <div className="grid grid-row justify-items-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start content-end border-white border">
+                        <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border  max-w-88 lg:max-w-full">
                             <div className="justify-self-center  relative grid ">
                                 {/* Mouse Hover Icon */}
                                 <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
@@ -302,13 +308,15 @@ const Home = () => {
                                 <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8 opacity-50 hidden md:grid">
                                     <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                                 </div>
-                                <img src={Obra4} className="grayscale hover:grayscale-0 duration-300" />
+                                <img src={Obra4} className="grayscale hover:grayscale-0 duration-300 size-full" />
                             </div>
-                            <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">REFORMA DE <br /> APARTAMENTO</h3>
-                            <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
-                            <div className="grid md:grid-flow-col self-center items-center gap-5">
-                                <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
-                                <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                            <div className="grid gap-0">
+                                <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">REFORMA DE <br /> APARTAMENTO</h3>
+                                <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
+                                <div className="grid md:grid-flow-col self-center items-center gap-5">
+                                    <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
+                                    <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                                </div>
                             </div>
                         </div>
                     </div>

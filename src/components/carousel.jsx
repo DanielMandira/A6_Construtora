@@ -60,7 +60,7 @@ const Carousel = ({ data }) => {
     <section className="grid grid-flow-row">
       {/* Botões de navegação */}
       {data.length > numItemsShow && (
-        <div className="grid grid-flow-col justify-center gap-32 top-112 md:justify-end md:bottom-8 md:top-auto md:gap-5 relative ">
+        <div className="grid grid-flow-col justify-center gap-32 top-112 md:justify-end lg:right-16 md:bottom-8 md:top-auto md:gap-5 relative ">
           <button className="flex justify-center text-white border w-24 hover:bg-laranja-primary duration-500 border-white rounded-full "
             onClick={() => handleSlideChange("prev")}
           >
@@ -73,7 +73,7 @@ const Carousel = ({ data }) => {
           </button>
         </div>
       )}
-      <div className="carousel grid grid-flow-row md:grid-flow-col gap-5 justify-center"
+      <div className="carousel grid grid-flow-row md:grid-flow-col gap-5 justify-center "
         ref={carouselRef}
         onMouseDown={handleDragStart}
         onMouseUp={handleDragEnd}
