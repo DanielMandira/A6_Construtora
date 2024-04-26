@@ -25,7 +25,7 @@ import EmailWhite from '../assets/icons/email-white.svg'
 
 const Home = () => {
     return (
-        <>
+        <section className="flex flex-col flex-1"> 
             {/* Inicio da Home */}
             <section className="grid grid-flow-row md:grid-flow-col border-white md:border-b white">
                 {/* Div vazia das bordas */}
@@ -391,8 +391,7 @@ const Home = () => {
                 </div>
 
             </section>
-            <br />
-        </>
+        </section>
     )
 }
 

@@ -57,7 +57,7 @@ const Carousel = ({ data }) => {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
   return (
-    <section className="grid grid-flow-row ">
+    <section className="grid grid-flow-row">
       {/* Botões de navegação */}
       {data.length > numItemsShow && (
         <div className="grid grid-flow-col justify-center gap-48 top-110 md:justify-end md:bottom-8 md:top-auto md:gap-5 relative ">
@@ -82,7 +82,7 @@ const Carousel = ({ data }) => {
       >
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + numItemsShow).map((d) => (
           <div className=" border w-96 border-white">
-            <div className="w-full h-82">
+            <div className="w-full  h-82">
               <img className=" h-full w-full object-cover grayscale" src={d.src} />
             </div>
             <div className="p-3 grid grid-flow-row text-center content-baseline justify-items-center justify-self-center">
