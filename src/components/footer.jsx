@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <>
             <section className="mt-20 mb-32 grid-flow-row md:pt-12 grid md:grid-flow-col gap-5 border-t border-white">
-                <div className=" text-white md:m-10 mx-12 mt-12">
+                <div className=" text-white md:m-16 mx-12 mt-12">
                     <h1 className="Sora text-laranja-primary text-xl md:text-5xl lg:text-6xl ">A6 CONSTRUTORA</h1>
                     <h3 className="Sora text-white font-bold text-xl">Sua Fundação para o Futuro</h3>
                     <p className=" Sora hidden lg:grid text-sm text-white content-center justify-self-center max-w-lg" >
