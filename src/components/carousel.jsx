@@ -60,7 +60,7 @@ const Carousel = ({ data }) => {
     <section className="grid grid-flow-row">
       {/* Botões de navegação */}
       {data.length > numItemsShow && (
-        <div className="grid grid-flow-col justify-center gap-48 top-110 md:justify-end md:bottom-8 md:top-auto md:gap-5 relative ">
+        <div className="grid grid-flow-col justify-center gap-32 top-112 md:justify-end md:bottom-8 md:top-auto md:gap-5 relative ">
           <button className="flex justify-center text-white border w-24 hover:bg-laranja-primary duration-500 border-white rounded-full "
             onClick={() => handleSlideChange("prev")}
           >
@@ -81,13 +81,13 @@ const Carousel = ({ data }) => {
         onTouchEnd={handleDragEnd}
       >
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + numItemsShow).map((d) => (
-          <div className=" border w-96 border-white">
+          <div className=" border w-80 h-546 lg:w-96 border-white">
             <div className="w-full  h-82">
               <img className=" h-full w-full object-cover grayscale" src={d.src} />
             </div>
             <div className="p-3 grid grid-flow-row text-center content-baseline justify-items-center justify-self-center">
               <p className="Sora text-white text-lg md:text-xl lg:text-2xl">{d.info}</p>
-              <a className="Sora text-laranja-primary cursor-pointer text-base">+ Saiba Mais</a>
+              <a className="Sora text-laranja-primary cursor-pointer text-nowrap text-base">+ Saiba Mais</a>
             </div>
           </div>
         ))}

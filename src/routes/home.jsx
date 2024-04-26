@@ -25,7 +25,7 @@ import EmailWhite from '../assets/icons/email-white.svg'
 
 const Home = () => {
     return (
-        <section className="flex flex-col flex-1"> 
+        <> 
             {/* Inicio da Home */}
             <section className="grid grid-flow-row md:grid-flow-col border-white md:border-b white">
                 {/* Div vazia das bordas */}
@@ -112,7 +112,7 @@ const Home = () => {
             </div>
             <br />
             {/* Carrossel */}
-            <section className="px-7 md:mx-32 grid grid-flow-row mt-24 ">
+            <section className="px-7  md:mx-32 grid grid-flow-row mt-24 ">
                 <div className="grid justify-center md:justify-start">
                     <h2 className="Michroma text-4xl text-white ">SERVIÇOS</h2>
                 </div>
@@ -391,7 +391,7 @@ const Home = () => {
                 </div>
 
             </section>
-        </section>
+        </>
     )
 }
 
