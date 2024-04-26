@@ -49,32 +49,35 @@ const NavBar = () => {
             <Modal />
             <div className="hidden md:grid border-e border-white w-10"></div>
             <div className=" border-e border-white content-center ">
-                <h1 className=' text-base mx-5 text-laranja-primary sm:base md:text-xl lg:text-3xl'><a href="/"><img src={A6_icon}/></a></h1>
+                <h1 className=' text-base mx-10p text-laranja-primary sm:base md:text-xl lg:text-3xl'><a href="/"><img src={A6_icon}/></a></h1>
             </div>
-            <div className=" border-e border-white col-span-4 "> </div>
-            <div className={` hidden sm:hidden md:hidden border-e lg:grid border-white content-center`}>
+            <div className=" border-e border-white col-span-2 lg:col-span-4 "> </div>
+            <div className={` hidden  border-e lg:grid border-white content-center`}>
                 <Link exact to='/' className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" >
                     Home
                 </Link>
             </div>
-            <div className={` hidden sm:hidden md:hidden border-e lg:grid border-white content-center`}>
+            <div className={` hidden  border-e lg:grid border-white content-center`}>
                 <Link className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" to='/sobre'>
                     Sobre
                 </Link>
             </div>
-            <div className={` hidden sm:hidden md:hidden border-e lg:grid border-white content-center`}>        <Link className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" to='#'>
+            <div className={` hidden  border-e lg:grid border-white content-center`}>        
+            <Link className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" to='#'>
                 Projetos
             </Link>
             </div>
-            <div className={` hidden sm:hidden md:hidden border-e lg:grid border-white content-center`}>        <Link className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" to='#'>
+            <div className={` hidden  border-e lg:grid border-white content-center`}>        
+            <Link className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" to='#'>
                 Benefícios
             </Link>
             </div>
-            <div className={` hidden sm:hidden md:hidden border-e lg:grid border-white content-center`}>        <Link className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" to='#'>
+            <div className={` hidden  border-e lg:grid border-white content-center`}>        
+            <Link className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" to='#'>
                 Contato
             </Link>
             </div>
-            <div className={` hidden sm:hidden md:hidden border-e lg:grid justify-center border-white content-center`}>
+            <div className={` hidden  border-e lg:grid justify-center border-white content-center`}>
                 <button className=' bg-laranja-primary m-3 p-2 rounded-full hover:scale-110 duration-300 '>Pedir Orçamento Agora!</button>
             </div>
             <div className="lg:hidden border-white my-5 justify-center grid ">

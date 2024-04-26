@@ -316,13 +316,13 @@ const Home = () => {
             </section >
             <br />
             {/* Imagens para celular */}
-            <section className="my-28 grid grid-flow-col items-center justify-center gap-3 md:hidden ">
+            <section className="my-20 grid grid-flow-col items-center justify-center gap-2 md:hidden ">
                 <div>
-                    <img className=" object-cover size-30 object-left-bottom" src={predioFinal} />
+                    <img className=" object-cover object-left-bottom" src={predioFinal} />
                 </div>
-                <div className=" grid gap-3">
-                    <img className="object-cover object-right-top size-30" src={predioFinal} />
-                    <img className=" object-cover size-30 object-left" src={predioFinal} />
+                <div className=" grid gap-2">
+                    <img className="object-cover object-right-top" src={predioFinal} />
+                    <img className=" object-cover object-left" src={predioFinal} />
                 </div>
             </section>
             <br />
