@@ -90,7 +90,7 @@ const Home = () => {
 
             </section>
             {/* Seção info numerica sobre a empresa */}
-            <section className="grid my-20 grid-flow-row md:grid-flow-col justify-center text-center text-white border-white md:border mx-32">
+            <section className="grid my-20 grid-flow-row md:grid-flow-col justify-center text-center text-white border-white md:border px-7 md:mx-32">
                 <div className="m-8">
                     <h1 className="Michroma text-6xl lg:text-7xl">20 <span className=" text-laranja-primary">+</span></h1>
                     <p className="Sora text-xl lg:text-2xl">Colaboradores no Time</p>
@@ -112,7 +112,7 @@ const Home = () => {
             </div>
             <br />
             {/* Carrossel */}
-            <section className="mx-32 grid grid-flow-row mt-24 ">
+            <section className="px-7 md:mx-32 grid grid-flow-row mt-24 ">
                 <div className="grid justify-center md:justify-start">
                     <h2 className="Michroma text-4xl text-white ">SERVIÇOS</h2>
                 </div>
@@ -122,7 +122,7 @@ const Home = () => {
             </section>
             <br />
             {/* Como Trabalhamos */}
-            <section className="grid grid-flow-row text-center mx-32">
+            <section className="grid grid-flow-row text-center px-7 md:mx-32">
                 <div className="grid grid-flow-row mt-28 mb-10 lg:my-28">
                     <p className="Sora text-base md:text-2xl text-laranja-primary">Como Trabalhamos</p>
                     <h3 className="Michroma hidden md:grid text-white md:text-5xl lg:text-7xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug ">DO PLANEJAMENTO<br /> À CONCRETIZAÇÃO</h3>
@@ -326,7 +326,7 @@ const Home = () => {
                 </div>
             </section>
             <br />
-            <section id="beneficios" className="mx-32 grid grid-flow-row lg:grid-flow-col">
+            <section id="beneficios" className="px-7 md:mx-32 grid grid-flow-row lg:grid-flow-col">
                 <div className="grid grid-flow-row content-center justify-center">
                     <p className="Sora md:grid hidden  text-center lg:text-start text-laranja-primary text-2xl"> Benefícios</p>
                     <h2 className="Michroma text-white text-center lg:text-start text-2xl lg:text-7xl">SEU PROJETO, <br /> NOSSA <span className="text-laranja-primary">EXPERTISE</span></h2>
@@ -337,7 +337,7 @@ const Home = () => {
             </section>
             <br />
             {/* Seção Construir Sonho */}
-            <section className="grid relative text-center lg:text-start justify-center grid-flow-row lg:grid-cols-2 lg:border lg:border-white my-28 mx-32 gap-10 top-20 p-10">
+            <section className="grid relative text-center lg:text-start justify-center grid-flow-row lg:grid-cols-2 lg:border lg:border-white my-28 px-7 md:mx-32 gap-10 top-20 p-10">
                 <div className="relative overflow-visible ">
                     <img className="absolute overflow-visible w-full h-749 start-0 -bottom-10 z-10 hidden lg:grid" src={predioFinal} />
                 </div>

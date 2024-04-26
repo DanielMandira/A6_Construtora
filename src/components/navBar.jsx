@@ -49,9 +49,9 @@ const NavBar = () => {
             <Modal />
             <div className="hidden md:grid border-e border-white w-10"></div>
             <div className=" border-e border-white content-center ">
-                <h1 className=' text-base mx-10p text-laranja-primary sm:base md:text-xl lg:text-3xl'><a href="/"><img src={A6_icon}/></a></h1>
+                <h1 className=' text-base mx-8 lg:mx-10 text-laranja-primary sm:base md:text-xl lg:text-3xl'><a href="/"><img src={A6_icon}/></a></h1>
             </div>
-            <div className=" border-e border-white col-span-2 lg:col-span-4 "> </div>
+            <div className=" border-e border-white col-span-4 "> </div>
             <div className={` hidden  border-e lg:grid border-white content-center`}>
                 <Link exact to='/' className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" >
                     Home
