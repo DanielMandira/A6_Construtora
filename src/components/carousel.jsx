@@ -41,10 +41,10 @@ const Carousel = ({ data }) => {
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = document.body.clientWidth
-      if (windowWidth >= 1124) {
+      if (windowWidth >= 1500) {
         setNumItemsShow(4)
       } else if (windowWidth >= 768) {
-        setNumItemsShow(3)
+          setNumItemsShow(3)
       } else {
         setNumItemsShow(1)
       }

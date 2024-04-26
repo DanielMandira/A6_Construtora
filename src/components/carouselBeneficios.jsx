@@ -60,7 +60,7 @@ const CarouselBeneficios = ({ data }) => {
     <section className="grid grid-flow-row">
       {/* Botões de navegação */}
       {data.length > numItemsShow && (
-           <div className="grid grid-flow-col justify-center gap-24 top-97 md:justify-end md:-left-20 lg:left-0 md:-bottom-82 md:top-auto md:gap-5 relative">
+           <div className="grid grid-flow-col justify-center gap-32 top-97 md:justify-end md:-left-2 lg:left-0 md:-bottom-100 md:top-auto md:gap-5 relative">
           <button className="flex justify-center text-white border w-24 hover:bg-laranja-primary duration-500 border-white rounded-full "
             onClick={() => handleSlideChange("prev")}
           >
