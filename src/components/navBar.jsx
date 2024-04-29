@@ -49,7 +49,7 @@ const NavBar = () => {
             <Modal />
             <div className="hidden md:grid border-e border-white w-10"></div>
             <div className=" border-e border-white content-center ">
-                <h1 className='mx-8 lg:mx-10 text-laranja-primary'><a href="/"><img src={A6_icon} /></a></h1>
+                <h1 className='text-laranja-primary'><a href="/"><img src={A6_icon} /></a></h1>
             </div>
             <div className=" border-e border-white col-span-4 "> </div>
             <div className={` hidden  border-e lg:grid border-white content-center`}>

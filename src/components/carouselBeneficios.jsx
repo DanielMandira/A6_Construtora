@@ -82,7 +82,7 @@ const CarouselBeneficios = ({ data }) => {
       onTouchEnd={handleDragEnd}
       >
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + numItemsShow).map((d) => (
-          <div className="border border-white md:mx-2 max-w-80">
+          <div className="border border-white h-101 max-w-80">
             <div className="relative w-full h-96 md:h-40">
               <img className=" w-full h-full object-cover md:h-40 grayscale" src={d.src} />
               <div className="bg-laranja-primary size-16 absolute z-10 right-0 bottom-0">
