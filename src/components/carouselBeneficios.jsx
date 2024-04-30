@@ -40,7 +40,7 @@ const CarouselBeneficios = ({ data }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      const windowWidth = document.body.clientWidth
+      const windowWidth = screen.width
       if (windowWidth >= 1024) {
         setNumItemsShow(2)
       } else if (windowWidth >= 768) {
@@ -57,10 +57,10 @@ const CarouselBeneficios = ({ data }) => {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
   return (
-    <section className="grid grid-flow-row">
+    <section className="flex flex-col flex-auto items-center md:items-end">
       {/* Botões de navegação */}
       {data.length > numItemsShow && (
-           <div className="grid grid-flow-col justify-center gap-32 top-97 md:justify-end md:-left-2 lg:left-0 md:-bottom-102 md:top-auto md:gap-5 relative">
+           <div className="flex flex-row justify-center  gap-32 top-97 md:justify-end md:-left-2 lg:left-0 md:-bottom-102 md:top-auto lg:-bottom-105 md:gap-5 relative">
           <button className="flex justify-center text-white border w-24 hover:bg-laranja-primary duration-500 border-white rounded-full "
             onClick={() => handleSlideChange("prev")}
           >
@@ -74,7 +74,7 @@ const CarouselBeneficios = ({ data }) => {
         </div>
       )}
       {/* Carousel container com funcioalidade de arrasto  */}
-      <div className="carouselBene grid grid-flow-row md:grid-flow-col gap-5 justify-center "
+      <div className="carouselBene flex flex-col md:flex-row gap-5 justify-center "
       ref={carouselBeneRef}
       onMouseDown={handleDragStart}
       onMouseUp={handleDragEnd}
@@ -82,7 +82,7 @@ const CarouselBeneficios = ({ data }) => {
       onTouchEnd={handleDragEnd}
       >
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + numItemsShow).map((d) => (
-          <div className="border border-white h-101 max-w-80">
+          <div className="border border-white md:h-101 lg:h-102 max-w-80 lg:w-96">
             <div className="relative w-full h-96 md:h-40">
               <img className=" w-full h-full object-cover md:h-40 grayscale" src={d.src} />
               <div className="bg-laranja-primary size-16 absolute z-10 right-0 bottom-0">

@@ -40,8 +40,8 @@ const Carousel = ({ data }) => {
   //  Ajustar o numero de itens baseado no tamaho da tela
   useEffect(() => {
     const handleResize = () => {
-      const windowWidth = document.body.clientWidth
-      if (windowWidth >= 1024) {
+      let windowWidth = screen.width
+      if (windowWidth >= 1440) {
         setNumItemsShow(4)
       } else if (windowWidth >= 768) {
           setNumItemsShow(3)
@@ -73,7 +73,7 @@ const Carousel = ({ data }) => {
           </button>
         </div>
       )}
-      <div className="carousel grid grid-flow-row md:grid-flow-col gap-5 justify-center "
+      <div className="carousel grid grid-flow-row md:grid-flow-col gap-5 items-center justify-center "
         ref={carouselRef}
         onMouseDown={handleDragStart}
         onMouseUp={handleDragEnd}
