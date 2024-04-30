@@ -45,11 +45,11 @@ const NavBar = () => {
     };
 
     return (
-        <header className={`Sora grid px-10 md:px-0 grid-flow-col text-nowrap border-white border-b text-center text-white`}>
+        <header className={`Sora grid md:px-0 grid-flow-col text-nowrap border-white border-b text-center text-white`}>
             <Modal />
             <div className="hidden md:grid border-e border-white w-10"></div>
             <div className=" border-e border-white content-center ">
-                <h1 className='text-laranja-primary'><a href="/"><img src={A6_icon} /></a></h1>
+                <h1 className='text-laranja-primary'><a href="/"><img  src={A6_icon} /></a></h1>
             </div>
             <div className=" border-e border-white col-span-4 "> </div>
             <div className={` hidden  border-e lg:grid border-white content-center`}>

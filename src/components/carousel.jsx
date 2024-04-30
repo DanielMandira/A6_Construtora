@@ -41,9 +41,10 @@ const Carousel = ({ data }) => {
   useEffect(() => {
     const handleResize = () => {
       let windowWidth = screen.width
-      if (windowWidth >= 1440) {
+      let windowHeight = screen.height
+      if (windowWidth >= 1024) {
         setNumItemsShow(4)
-      } else if (windowWidth >= 768) {
+      } else if (windowWidth >= 768 && windowHeight > 425) {
           setNumItemsShow(3)
       } else {
         setNumItemsShow(1)
@@ -57,10 +58,10 @@ const Carousel = ({ data }) => {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
   return (
-    <section className="grid grid-flow-row">
+    <div className="flex flex-col flex-1 bg-cinza max-w-96 justify-center items-center">
       {/* Botões de navegação */}
       {data.length > numItemsShow && (
-        <div className="grid grid-flow-col justify-center gap-32 top-112 md:justify-end lg:right-16 md:bottom-8 md:top-auto md:gap-5 relative ">
+        <div className="flex bg-laranja-primary flex-row flex-1 max-w-96 ">
           <button className="flex justify-center text-white border w-24 hover:bg-laranja-primary duration-500 border-white rounded-full "
             onClick={() => handleSlideChange("prev")}
           >
@@ -73,7 +74,7 @@ const Carousel = ({ data }) => {
           </button>
         </div>
       )}
-      <div className="carousel grid grid-flow-row md:grid-flow-col gap-5 items-center justify-center "
+      <div className="carousel  "
         ref={carouselRef}
         onMouseDown={handleDragStart}
         onMouseUp={handleDragEnd}
@@ -81,18 +82,18 @@ const Carousel = ({ data }) => {
         onTouchEnd={handleDragEnd}
       >
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + numItemsShow).map((d) => (
-          <div className=" border w-80 h-546 lg:w-96 border-white">
-            <div className="w-full  h-82">
-              <img className=" h-full w-full object-cover grayscale" src={d.src} />
+          <div className="grid grid-flow-row w-66 md:w-56 h-485 md:h-520 xl:w-72 2xl:w-82          border border-white">
+            <div className="h-393  ">
+              <img className="object-cover w-full h-full grayscale" src={d.src} />
             </div>
-            <div className="p-3 grid grid-flow-row text-center content-baseline justify-items-center justify-self-center">
+            <div className="p-3 grid grid-flow-row text-center justify-center content-baseline self-baseline">
               <p className="Sora text-white text-lg md:text-xl lg:text-2xl">{d.info}</p>
               <a className="Sora text-laranja-primary cursor-pointer text-nowrap text-base">+ Saiba Mais</a>
             </div>
           </div>
         ))}
       </div>
-    </section>
+    </div>
 
   )
 }

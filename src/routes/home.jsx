@@ -14,7 +14,6 @@ import Whatsapp from '../assets/icons/whatsapp.svg'
 import QrCode from '../assets/icons/qrcode.svg'
 import phone from '../assets/icons/phone.svg'
 import instagram from '../assets/icons/instagram.svg'
-import email from '../assets/icons/email.svg'
 import predioFinal from '../assets/imgs/predio_final.jpg'
 import Obra1 from '../assets/imgs/Obra_1/Obra_1.3.jpg'
 import Obra2 from '../assets/imgs/Obra_2/Obra_2.2.jpeg'
@@ -25,15 +24,15 @@ import EmailWhite from '../assets/icons/email-white.svg'
 
 const Home = () => {
     return (
-        <>
+        <section className="grid grid-flow-row justify-center">
             {/* Inicio da Home */}
             <section className="grid grid-flow-row md:grid-flow-col border-white md:border-b white">
                 {/* Div vazia das bordas */}
-                <div className="border-white md:border-e md:grid hidden  md:w-10"></div>
+                <div className="border-white md:border-e md:grid hidden  md:w-5 lg:w-10"></div>
                 {/* Div Slogan */}
                 <div className="border-white md:border-e ">
                     <div className="flex flex-col border-white border-b">
-                        <div className="m-10 md:m-16 lg:m-26 ">
+                        <div className="m-5 md:m-8 lg:m-22 ">
                             {/* Slogan */}
                             <div className="content-center flex flex-col justify-center">
                                 <h1 className="Michroma text-2xl sm:text-3xl md:text-5xl lg:text-7xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug  text-white font-bold">
@@ -47,7 +46,7 @@ const Home = () => {
                                 <br />
                                 {/* Texto sobre a empresa */}
                                 <div className="grid">
-                                    <p className=" Sora text-base text-white content-center justify-self-center" >
+                                    <p className=" Sora text-base text-white content-center justify-self-center " >
                                         A A6 Construtora é uma construtora de Goiânia - GO dedicada a oferecer soluções inovadoras e de alta qualidade para uma ampla gama de projetos residenciais e industriais.</p>
                                     <br />
                                 </div>
@@ -55,7 +54,7 @@ const Home = () => {
                                 <div className="flex">
                                     <button className="flex Sora items-center border text-white border-white rounded-full  justify-self-start  text-base text-nowrap p-2 md:p-4 hover:bg-laranja-primary duration-300 ">
                                         <div className="border border-white rounded-full">
-                                            <img className="p-3 w-12 md:p-4 md:w-16 " src={ArrowRD} />
+                                            <img className="p-3 w-10 md:p-4 md:w-16 " src={ArrowRD} />
                                         </div>
                                         &nbsp;&nbsp;Contate nossa equipe
                                     </button>
@@ -64,15 +63,15 @@ const Home = () => {
                         </div>
                     </div>
                     {/* Fotos Principais Serviçoes */}
-                    <div className="flex flex-col md:flex-row items-center justify-center md:justify-center gap-5 border-white lg:border-e lg:px-5  lg:me-5">
-                        <div className="border border-white my-5 md:my-10 max-w-72 lg:max-w-88">
-                            <img className=" object-cover grayscale" src={Obras} />
+                    <div className="grid grid-flow-row md:grid-flow-col md:gap-3 justify-items-center p-5 gap-y-5 lg:me-4 xl:me-6 lg:border-e border-white">
+                        <div className="border border-white">
+                            <img className="object-cover grayscale" src={Obras} />
                             <div className="p-4">
                                 <p className="Sora text-sm lg:text-base text-white">Gerenciamento e fiscalização de obra</p>
                                 <a className="Sora text-sm lg:text-base cursor-pointer text-laranja-primary">Ver mais +</a>
                             </div>
                         </div>
-                        <div className="border border-white m:w-36 md:my-10 max-w-72 lg:max-w-88">
+                        <div className="border border-white">
                             <img className=" object-cover grayscale" src={Comercial} />
                             <div className="p-4">
                                 <p className="Sora text-sm lg:text-base text-white">Planejamento e realização de um Galpão Comercial</p>
@@ -82,47 +81,49 @@ const Home = () => {
                     </div>
                 </div>
                 {/* Imagem Grande Lateral */}
-                <div className="hidden md:flex flex-1 border-white md:border-e">
-                    <img className=" object-cover md:max-w-79 lg:max-w-500 h-full md:p-5 lg:p-10" src={Lateral} />
+                <div className="hidden md:grid items-center border-white border-e p-3 md:col-span-6 lg:col-span-4 xl:col-span-1">
+                    <img className=" object-cover h-full" src={Lateral} />
                 </div>
                 {/* Div vazia das bordas */}
-                <div className="hidden md:grid w-10"></div>
-
+                <div className="hidden md:grid md:w-5 lg:w-10"></div>
             </section>
+
+
             {/* Seção info numerica sobre a empresa */}
-            <section className="grid my-20 grid-flow-row md:grid-flow-col justify-center text-center text-white border-white md:border px-10 lg:mx-20 xl-mx-36">
-                <div className="m-8">
+            <section className="grid grid-flow-row md:grid-flow-col my-16 md:border md:mx-5 lg:mx-10 xl:mx-20 text-white justify-center text-center ">
+                <div className="p-5">
                     <h1 className="Michroma text-6xl lg:text-7xl">20 <span className=" text-laranja-primary">+</span></h1>
                     <p className="Sora text-xl lg:text-2xl">Colaboradores no Time</p>
                 </div>
-                <div className="m-8">
+                <div className="p-5">
                     <h1 className="Michroma text-6xl lg:text-7xl">10 <span className=" text-laranja-primary">+</span></h1>
                     <p className="Sora text-xl lg:text-2xl">Projetos Concluídos</p>
                 </div>
-                <div className="m-8">
+                <div className="p-5">
                     <h1 className="Michroma text-6xl lg:text-7xl">4 <span className=" text-laranja-primary">+</span></h1>
                     <p className="Sora text-xl lg:text-2xl">Anos de Experiência</p>
                 </div>
-
             </section>
-            <div className="grid md:hidden grid-flow-row relative">
+
+            {/* Linha Mobile */}
+            <section className="grid md:hidden grid-flow-row relative">
                 <hr className="border-white absolute w-7/12 md:hidden" />
                 <br className="md:hidden" />
                 <hr className="border-white absolute w-7/12 top-7 end-0 md:hidden" />
-            </div>
+            </section>
             <br />
             {/* Carrossel */}
-            <section className="grid grid-flow-row mt-24  md:px-10 lg:px-20 xl:px-36 ">
+            <section className="grid grid-flow-row md:px-5 lg:px-10 xl:px-20 ">
                 <div className="grid justify-center md:justify-start relative">
                     <h2 className="Michroma text-4xl text-white ">SERVIÇOS</h2>
                 </div>
-                <div className="grid grid-flow-col">
+            </section>
+            <section className="grid bg-white max-w-96 justify-center grid-flow-row">
                     <Carousel data={data} />
-                </div>
             </section>
             <br />
             {/* Como Trabalhamos */}
-            <section className="flex flex-col text-center px-10 lg:px-20 xl:px-36">
+            <section className="hidden">
                 <div className="flex flex-col mt-28 mb-10 lg:my-28">
                     <p className="Sora text-base md:text-2xl text-laranja-primary">Como Trabalhamos</p>
                     <h3 className="Michroma hidden md:grid text-white md:text-5xl lg:text-7xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug ">DO PLANEJAMENTO<br /> À CONCRETIZAÇÃO</h3>
@@ -143,7 +144,7 @@ const Home = () => {
                 </div>
             </section>
             {/* Como Construimos */}
-            <section className="hidden md:flex flex-col px-10 lg:px-20 xl:px-36 my-26">
+            <section className="hidden">
                 <div className="md:flex hidden flex-row justify-center lg:justify-between">
                     <div className=" md:grid hidden my-10 grid-flow-row text-center lg:text-start ">
                         <h1 className="Michroma text-white text-3xl lg:text-5xl lg:leading-snug   ">COMO <br className="hidden lg:grid" />CONSRUÍMOS?</h1>
@@ -155,7 +156,7 @@ const Home = () => {
                     </div>
                 </div>
                 {/* Divs posições diferentes */}
-                <div className="lg:grid hidden grid-flow-col relative gap-x-5">
+                <div className="lg:flex hidden flex-row relative gap-x-5">
                     {/* Div laranja de Fundo Div 1*/}
                     <div className="absolute bg-laranja-primary size-20 z-0 top-66 -left-6"></div>
 
@@ -219,7 +220,7 @@ const Home = () => {
             </section>
             <br />
             {/* Portifolio de projetos */}
-            <section id="projetos" className="flex flex-col md:flex-row items-center md:items-stretch  xl:grid xl:grid-cols-2 my-16 gap-5 lg:mt-56 md:justify-start px-10 lg:px-20 xl:px-36">
+            <section id="projetos" className="hidden">
                 <div className="flex flex-col gap-5 justify-end">
                     {/* Titulo */}
                     <div className="flex flex-col">
@@ -228,7 +229,7 @@ const Home = () => {
                         <p className="Sora text-white hidden lg:grid text-start">Vislumbre o que podemos fazer!</p>
                     </div>
                     {/* Projeto 1 */}
-                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border  max-w-88 lg:max-w-full ">
+                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border">
                         <div className="justify-self-center relative grid ">
                             {/* Mouse Hover Icon */}
                             <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
@@ -239,7 +240,7 @@ const Home = () => {
                             <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3 opacity-50 hidden md:grid">
                                 <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                             </div>
-                            <img src={Obra1} className="grayscale hover:grayscale-0 duration-300  object-contain size-full " />
+                            <img src={Obra1} className="grayscale hover:grayscale-0 duration-300  object-contain" />
                         </div>
                         <div className="grid gap-5">
                             <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GERENCIAMENTO DE OBRA</h3>
@@ -251,7 +252,7 @@ const Home = () => {
                         </div>
                     </div>
                     {/* Projeto 2 */}
-                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border  max-w-88 lg:max-w-full">
+                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border ">
                         <div className="justify-self-center relative grid ">
                             {/* Mouse Hover Icon */}
                             <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
@@ -262,7 +263,7 @@ const Home = () => {
                             <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3 opacity-50 hidden md:grid">
                                 <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                             </div>
-                            <img src={Obra2} className="grayscale hover:grayscale-0 duration-300 size-full" />
+                            <img src={Obra2} className="grayscale hover:grayscale-0 duration-300 " />
                         </div>
                         <div className="grid gap-5">
                             <h3 className="Michroma text-base text-white md:text-3xl lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">ADEQUAÇÃO DE SALA COMERCIAL</h3>
@@ -273,10 +274,8 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                {/* Projeto 3 */}
-                <div className="grid grid-flow-row gap-5">
-                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border  max-w-88 lg:max-w-full ">
+                    {/* Projeto 3 */}
+                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border  ">
                         <div className="justify-self-center  relative grid ">
                             {/* Mouse Hover Icon */}
                             <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
@@ -287,7 +286,7 @@ const Home = () => {
                             <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8 opacity-50 hidden md:grid">
                                 <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                             </div>
-                            <img src={Obra3} className="grayscale hover:grayscale-0 duration-300 size-full" />
+                            <img src={Obra3} className="grayscale hover:grayscale-0 duration-300 " />
                         </div>
                         <div className="grid gap-0">
                             <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GALPÃO <br /> INDUSTRIAL</h3>
@@ -299,7 +298,7 @@ const Home = () => {
                         </div>
                     </div>
                     {/* Pojeto 4 */}
-                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border  max-w-88 lg:max-w-full">
+                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border ">
                         <div className="justify-self-center  relative grid ">
                             {/* Mouse Hover Icon */}
                             <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
@@ -310,7 +309,7 @@ const Home = () => {
                             <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8 opacity-50 hidden md:grid">
                                 <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                             </div>
-                            <img src={Obra4} className="grayscale hover:grayscale-0 duration-300 size-full" />
+                            <img src={Obra4} className="grayscale hover:grayscale-0 duration-300 " />
                         </div>
                         <div className="grid gap-0">
                             <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">REFORMA DE <br /> APARTAMENTO</h3>
@@ -322,9 +321,10 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
             </section >
             {/* Imagens para celular */}
-            <section className="my-10 flex flex-row items-center justify-center gap-2 md:hidden ">
+            <section className="hidden">
                 <div className="flex flex-1">
                     <img className="w-full h-24 object-cover object-left-bottom" src={predioFinal} />
                 </div>
@@ -334,7 +334,7 @@ const Home = () => {
                 </div>
             </section>
             <br />
-            <section id="beneficios" className="flex flex-1 flex-col lg:flex-row px-10 lg:px-20 xl:px-36">
+            <section id="beneficios" className="hidden">
                 <div className="flex flex-col justify-center">
                     <p className="Sora md:grid hidden  text-center lg:text-start text-laranja-primary text-2xl"> Benefícios</p>
                     <h2 className="Michroma text-white text-center lg:text-start text-2xl lg:text-7xl">SEU <br className="hidden lg:flex" />PROJETO, <br /> NOSSA <span className="text-laranja-primary">EXPERTISE</span></h2>
@@ -345,7 +345,7 @@ const Home = () => {
             </section>
             <br />
             {/* Seção Construir Sonho */}
-            <section id="contato" className="flex text-center lg:text-start justify-center flex-row  lg:grid lg:grid-cols-2 gap-5 lg:border lg:border-white lg:my-28 top-20 mx-10 px-5 lg:mx-20 xl:mx-36">
+            <section id="contato" className="hidden">
                 <div className="flex flex-auto relative ">
                     <img className="z-10 h-749 absolute -bottom-0  overflow-visible hidden lg:flex" src={predioFinal} />
                 </div>
@@ -402,7 +402,7 @@ const Home = () => {
                 </div>
 
             </section>
-        </>
+        </section>
     )
 }
 
