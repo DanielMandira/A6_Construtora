@@ -118,34 +118,34 @@ const Home = () => {
                     <h2 className="Michroma text-4xl text-white ">SERVIÇOS</h2>
                 </div>
             </section>
-            <section className="grid bg-white max-w-96 justify-center grid-flow-row">
-                    <Carousel data={data} />
+            <section className="grid justify-self-center justify-center grid-flow-row ">
+                <Carousel data={data} />
             </section>
             <br />
             {/* Como Trabalhamos */}
-            <section className="hidden">
+            <section className="gird px-5 lg:px-10 xl:px-20 grid-flow-col text-center ">
                 <div className="flex flex-col mt-28 mb-10 lg:my-28">
                     <p className="Sora text-base md:text-2xl text-laranja-primary">Como Trabalhamos</p>
                     <h3 className="Michroma hidden md:grid text-white md:text-5xl lg:text-7xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug ">DO PLANEJAMENTO<br /> À CONCRETIZAÇÃO</h3>
                     <h3 className="Michroma leading-snug sm:leading-snug md:leading-snug lg:leading-snug md:hidden text-center text-white text-2xl ">SUA OBRA EM BOAS MÃOS DO INÍCIO AO FIM</h3>
                 </div>
-                <div id="sobre" className="flex flex-col lg:grid lg:grid-cols-2 gap-3">
+                <div id="sobre" className="grid grid-flow-row lg:grid lg:grid-cols-2 gap-3">
                     <div className="flex justify-center" >
                         <iframe className=" h-72 w-full md:h-96 lg:h-full" src="https://www.youtube.com/embed/NvTngF_wJfo" title="A6 Construtora - Vídeos Institucional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <div className="flex flex-col gap-5 text-center border border-white md:text-start justify-self-center p-5">
+                    <div className="grid grid-flow-row gap-5 text-center border border-white md:text-start justify-self-center p-5">
                         <h2 className=" text-white Michroma text-2xl md:text-3xl lg:text-5xl">SOBRE NÓS</h2>
                         <p className=" text-white leading-loose text-base lg:text-lg Sora break-words">Nosso foco principal é fornecer expertise profissional em todos os aspectos da construção, desde o planejamento e design até a execução e conclusão do projeto. Acreditamos que a excelência é alcançada através da combinação de conhecimento técnico, criatividade e atenção aos detalhes, e isso se reflete em cada projeto que realizamos.</p>
-                        <div className="grid lg:grid-flow-col justify-items-center gap-5 md:flex md:flex-row-reverse md:justify-start md:justify-self-start ">
+                        <div className="grid lg:grid-flow-col justify-items-center gap-5 md:justify-start md:justify-self-start ">
                             <h3 className="text-white text-base md:text-2xl  sora">Conheça os <span className=" text-laranja-primary">benefícios</span> de trabalhar com a equipe de especialistas da A6</h3>
-                            <a href='#beneficios' className="border border-white rounded-full lg:px-3 xl:px-2 xl:py-1" ><img className="p-2 size-14 lg:p-0 hover:bg-laranja-primary hover:scale-105 cursor-pointer" src={ArrowD} /></a>
+                            <a href='#beneficios' className="border border-white rounded-full  grid self-center  hover:bg-laranja-primary hover:scale-105 " ><img className="size-14 lg:size-16 p-3 cursor-pointer" src={ArrowD} /></a>
                         </div>
                     </div>
                 </div>
             </section>
             {/* Como Construimos */}
-            <section className="hidden">
-                <div className="md:flex hidden flex-row justify-center lg:justify-between">
+            <section className="grid px-5 lg:px-10 xl:px-20 my-16 lg:my-36">
+                <div className="md:grid hidden grid-flow-col justify-center lg:justify-between">
                     <div className=" md:grid hidden my-10 grid-flow-row text-center lg:text-start ">
                         <h1 className="Michroma text-white text-3xl lg:text-5xl lg:leading-snug   ">COMO <br className="hidden lg:grid" />CONSRUÍMOS?</h1>
                     </div>
@@ -156,29 +156,29 @@ const Home = () => {
                     </div>
                 </div>
                 {/* Divs posições diferentes */}
-                <div className="lg:flex hidden flex-row relative gap-x-5">
+                <div className="lg:grid hidden grid-cols-3 relative gap-x-2">
+
                     {/* Div laranja de Fundo Div 1*/}
                     <div className="absolute bg-laranja-primary size-20 z-0 top-66 -left-6"></div>
-
-                    {/* Div laranja de Fundo Div 3*/}
-                    <div className="absolute lg:grid hidden bg-laranja-primary size-20 z-10 -bottom-8 -right-8 content-center justify-center rotate-180"><img src={ArrowRD} className="size-12" /></div>
                     {/* Div 1 */}
-                    <div className="bg-cinza relative z-10 grid p-16 content-evenly top-72">
-                        <h3 className="Michroma text-start text-white text-3xl">PROJETOS <span className=" text-laranja-primary ">EXCLUSIVOS</span>
+                    <div className="bg-cinza relative z-10 grid p-10 content-evenly top-72">
+                        <h3 className="Michroma text-start text-white lg:text-2xl xl:text-3xl">PROJETOS <span className=" text-laranja-primary ">EXCLUSIVOS</span>
                         </h3>
                         <p className="Sora text-white text-start text-xl">Fazemos questão de personalizar nossos projetos para cada cliente, buscando garantir que cada detalhe seja tratado com alta  <span className="text-laranja-primary"> qualidade e eficiência.</span> Para isso, contamos com nossa equipe de especialistas!</p>
 
                     </div>
                     {/* Div 2 */}
-                    <div className="bg-cinza z-10 relative w-414 h-450 top-32">
+                    <div className="bg-cinza z-10 relative top-32">
                         {/* Div laranja de Fundo Div 2*/}
                         <div className="absolute lg:grid  hidden bg-laranja-primary size-20 z-0 -top-6 -left-6"></div>
-                        <h3 className="Michroma z-20 leading-snug text-laranja-primary absolute top-36 left-12 text-7xl">TRAN<br />SPAR<br />ÊNCIA
+                        <h3 className="Michroma z-20 leading-normal text-center text-laranja-primary absolute top-36 lg:left-6 xl:left-12 lg:text-6xl xl:text-7xl">TRAN<br />SPAR<br />ÊNCIA
                         </h3>
-                        <img className="z-10 relative object-contain " src={Gerenciamento} />
+                        <img className="z-10 h-full w-full relative object-cover " src={Gerenciamento} />
                     </div>
                     {/* Div 3 */}
-                    <div className="bg-cinza relative z-0 grid p-16 content-evenly ">
+                    <div className="bg-cinza relative z-0 grid p-10 content-evenly ">
+                        {/* Div laranja de Fundo Div 3*/}
+                        <div className="absolute lg:grid hidden bg-laranja-primary size-20 z-10 -bottom-6 -right-6 content-center justify-center rotate-180"><img src={ArrowRD} className="size-12" /></div>
                         <h3 className="Michroma text-white text-start text-3xl">
                             <span className="text-laranja-primary">MAIS</span>
                             DO QUE CONSTRUIR
@@ -219,109 +219,113 @@ const Home = () => {
                 </div>
             </section>
             <br />
+            <br />
             {/* Portifolio de projetos */}
-            <section id="projetos" className="hidden">
-                <div className="flex flex-col gap-5 justify-end">
-                    {/* Titulo */}
-                    <div className="flex flex-col">
-                        <h2 className="Michroma text-2xl md:text-3xl lg:text-5xl text-white text-center md:text-start">POTIFOLIO DE <br /><span className=" text-laranja-primary">PROJETOS</span></h2>
-                        <br />
-                        <p className="Sora text-white hidden lg:grid text-start">Vislumbre o que podemos fazer!</p>
-                    </div>
-                    {/* Projeto 1 */}
-                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border">
-                        <div className="justify-self-center relative grid ">
-                            {/* Mouse Hover Icon */}
-                            <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
-                                <img className="size-4 md:size-8 lg:size-14 opacity-50 hidden md:grid" src={Mouse} />
-                                <p className=" sora text-xs text-white opacity-50 hidden md:grid">Passe o mouse <br /> acima da imagem</p>
-                            </div>
-                            {/* A6 Icon */}
-                            <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3 opacity-50 hidden md:grid">
-                                <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
-                            </div>
-                            <img src={Obra1} className="grayscale hover:grayscale-0 duration-300  object-contain" />
+            <section id="projetos" className="grid grid-flow-row md:grid-flow-col px-5 lg:px-10 xl:px-20 mb:my-10 lg:my-36 md:gap-3">
+                <div className="grid grid-flow-row gap-3">
+                    <div className="flex flex-col gap-5 justify-end">
+                        {/* Titulo */}
+                        <div className="flex flex-col">
+                            <h2 className="Michroma text-2xl md:text-3xl lg:text-5xl text-white text-center md:text-start">POTIFOLIO DE <br /><span className=" text-laranja-primary">PROJETOS</span></h2>
+                            <br />
+                            <p className="Sora text-white hidden lg:grid text-start">Vislumbre o que podemos fazer!</p>
                         </div>
-                        <div className="grid gap-5">
-                            <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GERENCIAMENTO DE OBRA</h3>
-                            <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
-                            <div className="grid md:grid-flow-col self-center items-center gap-5">
-                                <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
-                                <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                        {/* Projeto 1 */}
+                        <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border">
+                            <div className="justify-self-center relative grid ">
+                                {/* Mouse Hover Icon */}
+                                <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
+                                    <img className="size-4 md:size-8 lg:size-14 opacity-50 hidden md:grid" src={Mouse} />
+                                    <p className=" sora text-xs text-white opacity-50 hidden md:grid">Passe o mouse <br /> acima da imagem</p>
+                                </div>
+                                {/* A6 Icon */}
+                                <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3 opacity-50 hidden md:grid">
+                                    <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
+                                </div>
+                                <img src={Obra1} className="grayscale hover:grayscale-0 duration-300  object-contain" />
                             </div>
-                        </div>
-                    </div>
-                    {/* Projeto 2 */}
-                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border ">
-                        <div className="justify-self-center relative grid ">
-                            {/* Mouse Hover Icon */}
-                            <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
-                                <img className="size-4 md:size-8 lg:size-14 opacity-50 hidden md:grid" src={Mouse} />
-                                <p className=" sora text-xs text-white opacity-50 hidden md:grid">Passe o mouse <br /> acima da imagem</p>
-                            </div>
-                            {/* A6 Icon */}
-                            <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3 opacity-50 hidden md:grid">
-                                <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
-                            </div>
-                            <img src={Obra2} className="grayscale hover:grayscale-0 duration-300 " />
-                        </div>
-                        <div className="grid gap-5">
-                            <h3 className="Michroma text-base text-white md:text-3xl lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">ADEQUAÇÃO DE SALA COMERCIAL</h3>
-                            <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
-                            <div className="grid md:grid-flow-col self-center items-center gap-5">
-                                <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
-                                <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                            <div className="grid gap-5 text-center">
+                                <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GERENCIAMENTO DE OBRA</h3>
+                                <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
+                                <div className="grid md:grid-flow-col self-center items-center gap-5">
+                                    <button className="Sora justify-self-center cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
+                                    <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    {/* Projeto 3 */}
-                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border  ">
-                        <div className="justify-self-center  relative grid ">
-                            {/* Mouse Hover Icon */}
-                            <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
-                                <img className="size-4 md:size-8 lg:size-14 opacity-50 hidden md:grid" src={Mouse} />
-                                <p className=" sora text-xs text-white opacity-50 hidden md:grid">Passe o mouse <br /> acima da imagem</p>
+                        {/* Projeto 2 */}
+                        <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border ">
+                            <div className="justify-self-center relative grid ">
+                                {/* Mouse Hover Icon */}
+                                <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
+                                    <img className="size-4 md:size-8 lg:size-14 opacity-50 hidden md:grid" src={Mouse} />
+                                    <p className=" sora text-xs text-white opacity-50 hidden md:grid">Passe o mouse <br /> acima da imagem</p>
+                                </div>
+                                {/* A6 Icon */}
+                                <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3 opacity-50 hidden md:grid">
+                                    <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
+                                </div>
+                                <img src={Obra2} className="grayscale hover:grayscale-0 duration-300 " />
                             </div>
-                            {/* A6 Icon */}
-                            <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8 opacity-50 hidden md:grid">
-                                <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
-                            </div>
-                            <img src={Obra3} className="grayscale hover:grayscale-0 duration-300 " />
-                        </div>
-                        <div className="grid gap-0">
-                            <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GALPÃO <br /> INDUSTRIAL</h3>
-                            <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
-                            <div className="grid md:grid-flow-col self-center items-center gap-5">
-                                <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
-                                <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                            <div className="grid gap-5 text-center">
+                                <h3 className="Michroma text-base text-white md:text-3xl lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">ADEQUAÇÃO DE SALA COMERCIAL</h3>
+                                <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
+                                <div className="grid md:grid-flow-col self-center items-center gap-5">
+                                    <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
+                                    <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    {/* Pojeto 4 */}
-                    <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border ">
-                        <div className="justify-self-center  relative grid ">
-                            {/* Mouse Hover Icon */}
-                            <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
-                                <img className="size-4 md:size-8 lg:size-14 opacity-50 hidden md:grid" src={Mouse} />
-                                <p className=" sora text-xs text-white opacity-50 hidden md:grid">Passe o mouse <br /> acima da imagem</p>
+                    </div>
+                    <div className="grid grid-flow-row gap-3">
+                        {/* Projeto 3 */}
+                        <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border  ">
+                            <div className="justify-self-center  relative grid ">
+                                {/* Mouse Hover Icon */}
+                                <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
+                                    <img className="size-4 md:size-8 lg:size-14 opacity-50 hidden md:grid" src={Mouse} />
+                                    <p className=" sora text-xs text-white opacity-50 hidden md:grid">Passe o mouse <br /> acima da imagem</p>
+                                </div>
+                                {/* A6 Icon */}
+                                <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8 opacity-50 hidden md:grid">
+                                    <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
+                                </div>
+                                <img src={Obra3} className="grayscale hover:grayscale-0 duration-300 " />
                             </div>
-                            {/* A6 Icon */}
-                            <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8 opacity-50 hidden md:grid">
-                                <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
+                            <div className="grid gap-5 text-center">
+                                <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GALPÃO <br /> INDUSTRIAL</h3>
+                                <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
+                                <div className="grid md:grid-flow-col self-center items-center gap-5">
+                                    <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
+                                    <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                                </div>
                             </div>
-                            <img src={Obra4} className="grayscale hover:grayscale-0 duration-300 " />
                         </div>
-                        <div className="grid gap-0">
-                            <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">REFORMA DE <br /> APARTAMENTO</h3>
-                            <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
-                            <div className="grid md:grid-flow-col self-center items-center gap-5">
-                                <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
-                                <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                        {/* Pojeto 4 */}
+                        <div className="grid grid-flow-row justify-items-center justify-self-center md:justify-start md:justify-items-start gap-5 p-3 md:text-start border-white border ">
+                            <div className="justify-self-center  relative grid ">
+                                {/* Mouse Hover Icon */}
+                                <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
+                                    <img className="size-4 md:size-8 lg:size-14 opacity-50 hidden md:grid" src={Mouse} />
+                                    <p className=" sora text-xs text-white opacity-50 hidden md:grid">Passe o mouse <br /> acima da imagem</p>
+                                </div>
+                                {/* A6 Icon */}
+                                <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8 opacity-50 hidden md:grid">
+                                    <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
+                                </div>
+                                <img src={Obra4} className="grayscale hover:grayscale-0 duration-300 " />
+                            </div>
+                            <div className="grid gap-5 text-center">
+                                <h3 className="Michroma text-base text-white lg:text-5xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">REFORMA DE <br /> APARTAMENTO</h3>
+                                <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
+                                <div className="grid md:grid-flow-col self-center items-center gap-5">
+                                    <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
+                                    <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
             </section >
             {/* Imagens para celular */}
             <section className="hidden">

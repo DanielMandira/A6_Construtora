@@ -40,8 +40,8 @@ const Carousel = ({ data }) => {
   //  Ajustar o numero de itens baseado no tamaho da tela
   useEffect(() => {
     const handleResize = () => {
-      let windowWidth = screen.width
-      let windowHeight = screen.height
+      let windowWidth = document.documentElement.clientWidth
+      let windowHeight = document.documentElement.clientHeight
       if (windowWidth >= 1024) {
         setNumItemsShow(4)
       } else if (windowWidth >= 768 && windowHeight > 425) {
@@ -58,10 +58,10 @@ const Carousel = ({ data }) => {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
   return (
-    <div className="flex flex-col flex-1 bg-cinza max-w-96 justify-center items-center">
+    <div className="flex flex-col flex-1 justify-center md:justify-end md:items-end items-center  ">
       {/* Botões de navegação */}
       {data.length > numItemsShow && (
-        <div className="flex bg-laranja-primary flex-row flex-1 max-w-96 ">
+        <div className="flex flex-row flex-1 relative -bottom-106 gap-16 md:bottom-9  md:gap-5">
           <button className="flex justify-center text-white border w-24 hover:bg-laranja-primary duration-500 border-white rounded-full "
             onClick={() => handleSlideChange("prev")}
           >
@@ -74,7 +74,7 @@ const Carousel = ({ data }) => {
           </button>
         </div>
       )}
-      <div className="carousel  "
+      <div className="carousel grid grid-flow-col gap-5 justify-self-center"
         ref={carouselRef}
         onMouseDown={handleDragStart}
         onMouseUp={handleDragEnd}
@@ -82,7 +82,7 @@ const Carousel = ({ data }) => {
         onTouchEnd={handleDragEnd}
       >
         {[...data, ...data, ...data].slice(currentIndex, currentIndex + numItemsShow).map((d) => (
-          <div className="grid grid-flow-row w-66 md:w-56 h-485 md:h-520 xl:w-72 2xl:w-82          border border-white">
+          <div className="grid grid-flow-row  w-66 md:w-56 h-485 md:h-520 xl:w-72 2xl:w-82 border border-white">
             <div className="h-393  ">
               <img className="object-cover w-full h-full grayscale" src={d.src} />
             </div>
