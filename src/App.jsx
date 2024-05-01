@@ -4,7 +4,7 @@ import NavBar from './components/navBar'
 import Footer from './components/footer'
 function App() {
   return (
-    <div className='radial'> 
+    <div className='radial grid grid-flow-row'> 
       <NavBar />
       <Outlet/>
       <Footer/>
