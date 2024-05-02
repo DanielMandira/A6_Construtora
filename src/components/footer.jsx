@@ -16,13 +16,13 @@ const Footer = () => {
                     <p className=" Sora hidden lg:grid text-sm text-white content-center justify-self-center max-w-lg" >
                         A A6 Construtora é uma construtora de Goiânia - GO dedicada a oferecer soluções inovadoras e de alta qualidade para uma ampla gama de projetos residenciais e industriais.</p>
                     <div className="md:grid hidden grid-flow-col pt-10 justify-start">
-                        <a href="#" className="rounded-full p-2 m-2 hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10 stroke-white" src={phone} /></a>
+                        <a href="#" className="rounded-full content-center size-12 p-2 m-2 hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10 stroke-white" src={phone} /></a>
 
-                        <a href="#" className="rounded-full p-2 m-2 hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10" src={instagram} /></a>
+                        <a href="#" className="rounded-full content-center size-12 p-2 m-2 hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10" src={instagram} /></a>
 
-                        <a href="#" className="rounded-full p-2 m-2 hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10" src={email} /></a>
+                        <a href="#" className="rounded-full content-center size-12 p-2 m-2 hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10" src={email} /></a>
 
-                        <a href="#" className="rounded-full p-2 m-2 hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10" src={whats} /></a>
+                        <a href="#" className="rounded-full content-center size-12 p-2 m-2 hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10" src={whats} /></a>
                     </div>
                 </div>
                 <h3 className="Sora text-white font-medium text-base md:hidden mx-8  md:mx-12">Links rápidos</h3>

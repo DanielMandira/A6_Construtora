@@ -118,9 +118,7 @@ const Home = () => {
                     <h2 className="Michroma text-4xl text-white ">SERVIÇOS</h2>
                 </div>
             </section>
-            <section className="grid justify-self-center justify-center grid-flow-row ">
                 <Carousel data={data} />
-            </section>
             <br />
             {/* Como Trabalhamos */}
             <section className="gird px-5 lg:px-10 xl:px-20 grid-flow-col text-center ">
@@ -162,28 +160,28 @@ const Home = () => {
                     <div className="absolute bg-laranja-primary size-20 z-0 top-66 -left-6"></div>
                     {/* Div 1 */}
                     <div className="bg-cinza relative z-10 grid p-10 content-evenly top-72">
-                        <h3 className="Michroma text-start text-white lg:text-2xl xl:text-3xl">PROJETOS <span className=" text-laranja-primary ">EXCLUSIVOS</span>
+                        <h3 className="Michroma text-start text-white lg:text-2xl xl:text-3xl 2xl:text-5xl">PROJETOS <span className=" text-laranja-primary ">EXCLUSIVOS</span>
                         </h3>
-                        <p className="Sora text-white text-start text-xl">Fazemos questão de personalizar nossos projetos para cada cliente, buscando garantir que cada detalhe seja tratado com alta  <span className="text-laranja-primary"> qualidade e eficiência.</span> Para isso, contamos com nossa equipe de especialistas!</p>
+                        <p className="Sora text-white text-start text-xl 2xl:text-3xl">Fazemos questão de personalizar nossos projetos para cada cliente, buscando garantir que cada detalhe seja tratado com alta  <span className="text-laranja-primary"> qualidade e eficiência.</span> Para isso, contamos com nossa equipe de especialistas!</p>
 
                     </div>
                     {/* Div 2 */}
                     <div className="bg-cinza z-10 relative top-32">
                         {/* Div laranja de Fundo Div 2*/}
                         <div className="absolute lg:grid  hidden bg-laranja-primary size-20 z-0 -top-6 -left-6"></div>
-                        <h3 className="Michroma z-20 leading-normal text-center text-laranja-primary absolute top-36 lg:left-6 xl:left-12 lg:text-6xl xl:text-7xl">TRAN<br />SPAR<br />ÊNCIA
+                        <h3 className="Michroma z-20 leading-normal text-center text-laranja-primary absolute top-32 lg:top-24  lg:left-8 xl:left-10 2xl:left-32 justify-center lg:text-6xl xl:text-7xl xl:leading-relaxed lg:leading-relaxed">TRAN<br />SPAR<br />ÊNCIA
                         </h3>
-                        <img className="z-10 h-full w-full relative object-cover " src={Gerenciamento} />
+                        <img className="z-10 h-full w-full max-h-112 relative object-cover " src={Gerenciamento} />
                     </div>
                     {/* Div 3 */}
                     <div className="bg-cinza relative z-0 grid p-10 content-evenly ">
                         {/* Div laranja de Fundo Div 3*/}
                         <div className="absolute lg:grid hidden bg-laranja-primary size-20 z-10 -bottom-6 -right-6 content-center justify-center rotate-180"><img src={ArrowRD} className="size-12" /></div>
-                        <h3 className="Michroma text-white text-start text-3xl">
+                        <h3 className="Michroma text-white text-start  lg:text-2xl xl:text-3xl 2xl:text-5xl">
                             <span className="text-laranja-primary">MAIS</span>
                             DO QUE CONSTRUIR
                         </h3>
-                        <p className="Sora text-white text-start text-xl">Estamos sempre empenhados em entender suas necessidades específicas e em oferecer soluções personalizadas que atendam não apenas aos requisitos técnicos, mas também às suas<span className="text-laranja-primary"> visões e objetivos.</span></p>
+                        <p className="Sora text-white text-start text-xl 2xl:text-3xl">Estamos sempre empenhados em entender suas necessidades específicas e em oferecer soluções personalizadas que atendam não apenas aos requisitos técnicos, mas também às suas<span className="text-laranja-primary"> visões e objetivos.</span></p>
                     </div>
                 </div>
 
@@ -338,65 +336,65 @@ const Home = () => {
                 </div>
             </section>
             <br />
-            <section id="beneficios" className="grid px-5 lg:px-10 xl:mx-20">
+            <section id="beneficios" className="grid grid-flow-row lg:grid-flow-col mx-5 lg:mx-10 xl:mx-20 gap-3 justify-center lg:justify-between my-16 ">
                 <div className="flex flex-col justify-center">
                     <p className="Sora md:grid hidden  text-center lg:text-start text-laranja-primary text-2xl"> Benefícios</p>
-                    <h2 className="Michroma text-white text-center lg:text-start text-2xl lg:text-7xl">SEU <br className="hidden lg:flex" />PROJETO, <br /> NOSSA <span className="text-laranja-primary">EXPERTISE</span></h2>
+                    <h2 className="Michroma text-white text-center lg:text-start text-2xl lg:text-5xl xl:text-7xl leading-normal md:leading-normal sm:leading-normal lg:leading-normal xl:leading-normal">SEU <br className="hidden lg:flex" />PROJETO, <br /> NOSSA <span className="text-laranja-primary"><br className="flex md:hidden lg:flex" /> EXPERTISE</span></h2>
                 </div>
-                <div className="flex flex-row flex-auto" >
+                <div className="flex flex-row flex-auto justify-self-center" >
                     <CarouselBeneficios data={dataBene} />
                 </div>
             </section>
             <br />
             {/* Seção Construir Sonho */}
-            <section id="contato" className="hidden">
-                <div className="flex flex-auto relative ">
-                    <img className="z-10 h-749 absolute -bottom-0  overflow-visible hidden lg:flex" src={predioFinal} />
+            <section id="contato" className="grid grid-flow-row px-5 lg:px-5 lg:mx-10 xl:mx-20 text-center lg:grid-cols-2 lg:text-start lg:border border-white lg:mt-36 xl:mt-48 ">
+                <div className="grid relative">
+                    <img className="z-10 lg:h-725 xl:h-749 absolute -bottom-0  overflow-visible object-center hidden lg:flex" src={predioFinal} />
                 </div>
-                <div className="grid grid-flow-row gap-10 p-10">
-                    <h2 className="Michroma text-2xl text-white md:text-4xl lg:text-5xl">DEIXE-NOS <span className=" text-laranja-primary">CONSTRUIR</span><br /> SEU SONHO</h2>
+                <div className="grid grid-flow-row gap-3 p-5">
+                    <h2 className="Michroma text-2xl text-white md:text-4xl xl:text-5xl">DEIXE-NOS <span className=" text-laranja-primary">CONSTRUIR</span><br /> SEU SONHO</h2>
                     <p className="Sora text-white text-sm md:text-base">Peça seu orçamento agora! Sinta-se a vontade para entrar em contato com o nosso time, ficamos felizes de tirar suas dúvidas ou discutir seu próximo projeto!</p>
                     <div className="grid grid-flow-row md:grid-flow-col gap-5 content-center items-center">
-                        <button className="Sora lg:grid hidden grid-flow-col justify-self-center justify-center bg-laranja-primary items-center text-black rounded-full p-5 hover:scale-105 duration-300 text-xl"><img className="size-8" src={Whatsapp} /> &nbsp;&nbsp;Conversar no WhatsApp</button>
-                        <button className="Sora hidden lg:grid grid-flow-col  justify-center border border-white text-white items-center rounded-full p-5 hover:scale-105 duration-300 text-xl"><img className="w-10" src={QrCode} /> &nbsp;&nbsp; Escanear QrCode</button>
+                        <button className="Sora lg:grid hidden grid-flow-col justify-self-center justify-center bg-laranja-primary items-center text-black rounded-full p-5 hover:scale-105 duration-300 lg:text-lg xl:text-xl"><img className="size-10" src={Whatsapp} /> &nbsp;&nbsp;Conversar no WhatsApp</button>
+                        <button className="Sora hidden lg:grid grid-flow-col  justify-center border border-white text-white items-center rounded-full p-5 hover:scale-105 duration-300 lg:text-lg xl:text-xl"><img className="size-10" src={QrCode} /> &nbsp;&nbsp; Escanear QrCode</button>
                     </div>
                     <div className="lg:grid grid-flow-row justify-center md:grid-cols-2 justify-items-start hidden">
                         <div className="grid grid-flow-col items-center">
-                            <button className="rounded-full p-2 m-2  bg-laranja-primary cursor-pointer"><img className="size-10 stroke-white" src={phone} /></button>
-                            <p className="text-white text-xl">(62) 99124-3743</p>
+                            <a className="rounded-full p-2 m-2 size-12 content-center hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10 stroke-white" src={phone} /></a>
+                            <p className="text-white lg:text-lg xl:text-xl">(62) 99124-3743</p>
                         </div>
                         <div className="grid grid-flow-col items-center">
-                            <button className="rounded-full p-2 m-2  bg-laranja-primary cursor-pointer"><img className="size-10" src={instagram} /></button>
-                            <p className="text-white text-xl">@a6construtora</p>
+                            <a className="rounded-full content-center p-2 m-2 size-12 hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10" src={instagram} /></a>
+                            <p className="text-white lg:text-lg xl:text-xl">@a6construtora</p>
                         </div>
                         <div className="grid grid-flow-col items-center">
-                            <button className="rounded-full p-2 m-2  bg-laranja-primary cursor-pointer text-wrap"><svg className="size-10" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.456 84.992H492.544L501.76 89.088L508.928 95.232L512 103.424V408.576L508.928 415.744L501.76 423.936L492.544 427.008H19.456L10.24 422.912L3.072 416.768L0 408.576V103.424L4.096 95.232L10.24 88.064L19.456 84.992ZM39.936 105.472L45.056 110.592L60.416 122.88L70.656 130.048L80.896 137.216H82.944L83.968 140.288L103.424 154.624L124.928 171.008L136.192 179.2L155.648 193.536L168.96 203.776L183.296 215.04L190.464 219.136L208.896 233.472H210.944L211.968 236.544L223.232 244.736L242.688 259.072L252.928 262.144L263.168 261.12L272.384 257.024L293.888 240.64L301.056 235.52V233.472L305.152 231.424L324.608 217.088L331.776 212.992L343.04 203.776L361.472 189.44L380.928 175.104L387.072 171.008L405.504 156.672L424.96 142.336L435.2 134.144L445.44 126.976L464.896 112.64L472.064 106.496V105.472H39.936ZM20.48 119.808V389.12L22.528 388.096V386.048L25.6 385.024L33.792 374.784L45.056 360.448L48.128 355.328L51.2 352.256L57.344 344.064L62.464 338.944L76.8 321.536L88.064 307.2L102.4 289.792L113.664 275.456L128 258.048L130.048 253.952L140.288 252.928L145.408 254.976L147.456 258.048V266.24L143.36 272.384L130.048 288.768L118.784 303.104L109.568 314.368L96.256 330.752L91.136 336.896V338.944L87.04 340.992L82.944 346.112L79.872 351.232L66.56 367.616L56.32 380.928L51.2 386.048L40.96 398.336L37.888 403.456L36.864 406.528H476.16L472.064 401.408L468.992 396.288L457.728 381.952L452.608 376.832L443.392 365.568L430.08 349.184L427.008 344.064L422.912 338.944H420.864L418.816 334.848L409.6 323.584L396.288 307.2L385.024 292.864L370.688 275.456L364.544 266.24V258.048L368.64 253.952L376.832 252.928L381.952 253.952L384 258.048L395.264 271.36L406.528 285.696L417.792 299.008L428.032 312.32L442.368 329.728L450.56 339.968L453.632 344.064H455.68L457.728 349.184L462.848 354.304L471.04 365.568L484.352 381.952L487.424 386.048H489.472L490.496 389.12H491.52V119.808L484.352 124.928L477.184 129.024L466.944 137.216L448.512 151.552L429.056 165.888L417.792 174.08L396.288 190.464L376.832 204.8L370.688 209.92L361.472 216.064L339.968 232.448L328.704 241.664L313.344 252.928L306.176 257.024L294.912 266.24L281.6 276.48L273.408 280.576L265.216 282.624H246.784L236.544 279.552L226.304 273.408L216.064 265.216L202.752 254.976L191.488 247.808L173.056 233.472L161.792 224.256L143.36 210.944L133.12 203.776L121.856 194.56L102.4 180.224L89.088 169.984L77.824 161.792L58.368 147.456L45.056 137.216L33.792 128L23.552 121.856L20.48 119.808Z" fill="black" />
-                            </svg>
-                            </button>
-                            <p className="text-white text-xl">contato@a6construtora.com</p>
+                            <a className="rounded-full content-center size-12 p-2 m-2  hover:scale-105 bg-laranja-primary cursor-pointer text-wrap">
+                            <img className="size-10 brightness-0" src={EmailWhite} />
+                            </a>
+                            <p className="text-white lg:text-lg xl:text-xl">contato@a6construtora.com</p>
                         </div>
                     </div>
-                    <div className="grid grid-flow-row justify-center md:grid-cols-2 justify-self-center justify-items-center lg:hidden gap-5">
-                        <div className="grid grid-flow-col items-center">
-                            <button className="Sora grid grid-flow-col justify-self-center justify-center bg-laranja-primary items-center text-black rounded-full p-5 hover:scale-105 duration-300 w-full text-xl min-w-80"><img className="size-8" src={Whatsapp} /> &nbsp; WhatsApp</button>
+                    {/* Mobile */}
+                    <div className="grid grid-flow-row  md:grid-cols-2 lg:hidden gap-3">
+                        <div className="grid grid-flow-col  items-center">
+                            <button className="Sora grid grid-flow-col justify-self-center justify-center bg-laranja-primary items-center text-black rounded-full p-5 hover:scale-105 duration-300 min-w-full text-xl"><img className="size-8" src={Whatsapp} /> &nbsp; WhatsApp</button>
                         </div>
                         <div className="grid grid-flow-col items-center">
-                            <button className="Sora grid grid-flow-col justify-self-center justify-center border-white border items-center text-black rounded-full p-5 hover:scale-105 duration-300 w-full text-xl min-w-80">
+                            <button className="Sora grid grid-flow-col justify-self-center justify-center border-white border items-center text-black rounded-full p-5 hover:scale-105 duration-300 min-w-full text-xl">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="size-10 fill-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg>
                                 <p className="text-white text-xl">&nbsp;&nbsp;Instagram</p>
                             </button>
 
                         </div>
                         <div className="grid grid-flow-col items-center">
-                            <button className="Sora grid grid-flow-col justify-self-center justify-center border-white border items-center text-black rounded-full p-5 hover:scale-105 duration-300 w-full text-xl min-w-80">
+                            <button className="Sora grid grid-flow-col justify-self-center justify-center border-white border items-center text-black rounded-full p-5 hover:scale-105 duration-300 min-w-full text-xl">
                                 <img className="size-10 fill-white" src={PhoneWhite} />
                                 <p className="text-white text-xl">&nbsp;&nbsp;Salvar Contato</p>
                             </button>
 
                         </div>
                         <div className="grid grid-flow-col items-center">
-                            <button className="Sora grid grid-flow-col justify-self-center justify-center border-white border items-center text-black rounded-full p-5 hover:scale-105 duration-300 w-full text-xl min-w-80">
+                            <button className="Sora grid grid-flow-col justify-self-center justify-center border-white border items-center text-black rounded-full p-5 hover:scale-105 duration-300 min-w-full text-xl">
                                 <img className="size-10 fill-white" src={EmailWhite} />
                                 <p className="text-white text-xl">&nbsp;&nbsp;Enviar Email</p>
                             </button>
@@ -404,7 +402,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
             </section>
         </section>
     )
