@@ -4,12 +4,12 @@ import Rules from '../assets/icons/rules.svg'
 import Dollar from '../assets/icons/dollar.svg'
 import Headset from '../assets/icons/headset.svg'
 import Suporte from '../assets/icons/suporte.svg'
-import SuportePosConstrucao from '../assets/imgs/suporte_pos_construcao.jpg'
-import Tecnologias from '../assets/imgs/tecnologias_avancadas.jpg'
-import Prazos from '../assets/imgs/prazos_custos.jpg'
-import Atencao from '../assets/imgs/atencao_normas.jpg'
-import Qualidade from '../assets/imgs/qualidade_seguranca.jpg'
-import Assistencia from '../assets/imgs/assistencia.png'
+import SuportePosConstrucao from '../assets/imgs/suporte_pos_construcao.webp'
+import Tecnologias from '../assets/imgs/tecnologias_avancadas.webp'
+import Prazos from '../assets/imgs/prazos_custos.webp'
+import Atencao from '../assets/imgs/atencao_normas.webp'
+import Qualidade from '../assets/imgs/qualidade_seguranca.webp'
+import Assistencia from '../assets/imgs/assistencia.webp'
 
 const dataBene=[
     {

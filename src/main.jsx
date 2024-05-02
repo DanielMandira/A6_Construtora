@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Home from './routes/home.jsx'
+// import Obras from './routes/obras.jsx'
 import './index.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
         path: "/",
         element:<Home />
       },
+      // {
+      //   path: "/Obras/:id",
+      //   element:<Obras />
+      // },
     ]
   }
 ])

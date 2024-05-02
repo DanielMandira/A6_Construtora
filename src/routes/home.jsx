@@ -14,13 +14,14 @@ import Whatsapp from '../assets/icons/whatsapp.svg'
 import QrCode from '../assets/icons/qrcode.svg'
 import phone from '../assets/icons/phone.svg'
 import instagram from '../assets/icons/instagram.svg'
-import predioFinal from '../assets/imgs/predio_final.jpg'
-import Obra1 from '../assets/imgs/Obra_1/Obra_1.3.jpg'
-import Obra2 from '../assets/imgs/Obra_2/Obra_2.2.jpeg'
-import Obra3 from '../assets/imgs/Obra_3/Obra_3.2.png'
-import Obra4 from '../assets/imgs/Obra_4/Obra_4.1.jpeg'
+import predioFinal from '../assets/imgs/predio_final.webp'
+import Obra1 from '../assets/imgs/Obra_1/Obra_1.3.webp'
+import Obra2 from '../assets/imgs/Obra_2/Obra_2.2.webp'
+import Obra3 from '../assets/imgs/Obra_3/Obra_3.2.webp'
+import Obra4 from '../assets/imgs/Obra_4/Obra_4.1.webp'
 import PhoneWhite from '../assets/icons/phone-white.svg'
 import EmailWhite from '../assets/icons/email-white.svg'
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -247,7 +248,7 @@ const Home = () => {
                                 <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
                                 <div className="grid md:grid-flow-col self-center items-center gap-3">
                                     <button className="Sora justify-self-center cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
-                                    <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                                    <Link to="/Obras/1" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</Link>
                                 </div>
                             </div>
                         </div>

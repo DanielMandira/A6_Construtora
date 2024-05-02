@@ -30,7 +30,7 @@ const NavBar = () => {
                     <a onClick={toggleNavBar} className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='/#sobre'>
                         Sobre
                     </a>
-                    <a className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='#projetos'>
+                    <a  onClick={toggleNavBar}  className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='#projetos'>
                         Projetos
                     </a>
                     <a onClick={toggleNavBar} className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='#beneficios'>

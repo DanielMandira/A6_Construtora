@@ -32,3 +32,7 @@ html{
     -webkit-text-stroke-width:1px;
     -webkit-text-stroke-color: #ff7500;
 }
+
+img{
+ image-rendering: optimizeSpeed;
+}
