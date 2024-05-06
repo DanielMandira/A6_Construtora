@@ -6,6 +6,7 @@ import Projetos from './routes/projetos.jsx'
 import Servicos from './routes/servicos.jsx'
 import './index.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+
 const router = createBrowserRouter([
   {
     path: "/",

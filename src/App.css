@@ -12,6 +12,11 @@ html{
     radial-gradient(ellipse at 20% 45% ,#00000062, #00000062),
     radial-gradient(ellipse at 10% 90% ,#ff77001a, #0000001a);
 }
+
+.radial2{
+    background-image:
+    radial-gradient(circle at -30% 200% ,#ff77001a, #0000001a);
+}
 .Michroma{
     font-family: Michroma;
 }

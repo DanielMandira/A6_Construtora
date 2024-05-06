@@ -30,7 +30,8 @@ import Obra47 from '../assets/imgs/Obra_4/Obra_4.7.webp'
 const ProjetosData = [
     {
         id: 1,
-        titulo:'Gerenciamento de Obra',  
+        titulo:'Gerenciamento de Obra',
+        info: "Falar um pouco sobre o projeto. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",  
         img: [
             {
                 src: Obra11,
@@ -46,6 +47,7 @@ const ProjetosData = [
     {
         id: 2,
         titulo:'Adequação de sala comercial',
+        info: "Falar um pouco sobre o projeto. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         img: [
             {
                 src: Obra21,
@@ -61,6 +63,7 @@ const ProjetosData = [
     {
         id: 3,
         titulo:'Galpão Industrial',
+        info: "Falar um pouco sobre o projeto. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         img: [
             {
                 src: Obra31,
@@ -101,6 +104,7 @@ const ProjetosData = [
     {
         id: 4,
         titulo:'Reforma de Apartamento',
+        info: "Falar um pouco sobre o projeto. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         img: [
             {
                 src:Obra41,
