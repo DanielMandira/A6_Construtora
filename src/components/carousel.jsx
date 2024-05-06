@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import arrow from '../assets/icons/arrow.svg';
+import { Link } from "react-router-dom";
 
 const Carousel = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -84,13 +85,14 @@ const Carousel = ({ data }) => {
         onTouchEnd={handleDragEnd}
       >
         {[...data,...data,...data].slice(currentIndex, currentIndex + numItemsShow).map((d, index) => (
+          
           <div key={index} className="grid grid-flow-row  w-66 md:w-56 h-485 md:h-520 xl:w-72 2xl:w-83   border border-white">
             <div className="h-393">
               <img className="object-cover w-full h-full grayscale" src={d.src} alt={d.info} />
             </div>
             <div className="p-3 grid grid-flow-row text-center justify-center content-baseline self-baseline">
               <p className="Sora text-white text-lg md:text-xl lg:text-2xl">{d.info}</p>
-              <a className="Sora text-laranja-primary cursor-pointer text-nowrap text-base">+ Saiba Mais</a>
+              <Link to={`/Servicos/${index}`} className="Sora text-laranja-primary cursor-pointer text-nowrap text-base">+ Saiba Mais</Link>
             </div>
           </div>
         ))}

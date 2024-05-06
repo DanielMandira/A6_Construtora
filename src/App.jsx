@@ -4,7 +4,7 @@ import NavBar from './components/navBar'
 import Footer from './components/footer'
 function App() {
   return (
-    <div className='radial grid grid-flow-row justify-center'> 
+    <div className={location.pathname === '/' ? 'radial grid grid-flow-row justify-center' : 'grid grid-flow-row justify-center'}>
       <NavBar />
       <Outlet/>
       <Footer/>

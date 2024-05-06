@@ -24,6 +24,14 @@ import EmailWhite from '../assets/icons/email-white.svg'
 import { Link } from "react-router-dom";
 
 const Home = () => {
+    function copiarTexto (texto){
+        var input = document.createElement('input');
+        input.value = texto;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+      }
     return (
         <section className="grid grid-flow-row justify-center">
             {/* Inicio da Home */}
@@ -53,12 +61,12 @@ const Home = () => {
                                 </div>
                                 {/* Botão Para Contato */}
                                 <div className="flex">
-                                    <button className="flex Sora items-center border text-white border-white rounded-full  justify-self-start  text-base text-nowrap p-2 md:p-4 hover:bg-laranja-primary duration-300 ">
+                                    <a href="#contato" className="flex Sora items-center border text-white border-white rounded-full  justify-self-start  text-base text-nowrap p-2 md:p-4 hover:bg-laranja-primary duration-300 ">
                                         <div className="border border-white rounded-full">
                                             <img className="p-3 w-10 md:p-4 md:w-16 " src={ArrowRD} />
                                         </div>
                                         &nbsp;&nbsp;Contate nossa equipe
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -247,8 +255,8 @@ const Home = () => {
                                 <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GERENCIAMENTO DE OBRA</h3>
                                 <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
                                 <div className="grid md:grid-flow-col self-center items-center gap-3">
-                                    <button className="Sora justify-self-center cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
-                                    <Link to="/Obras/1" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</Link>
+                                    <a href="#contato" className="Sora justify-self-center cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</a>
+                                    <Link to="/Projetos/1" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</Link>
                                 </div>
                             </div>
                         </div>
@@ -270,8 +278,8 @@ const Home = () => {
                                 <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">ADEQUAÇÃO DE SALA COMERCIAL</h3>
                                 <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
                                 <div className="grid md:grid-flow-col self-center items-center gap-5">
-                                    <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
-                                    <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                                    <a href="#contato" className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</a>
+                                    <Link to="/Projetos/2" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</Link>
                                 </div>
                             </div>
                         </div>
@@ -296,8 +304,8 @@ const Home = () => {
                             <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GALPÃO <br /> INDUSTRIAL</h3>
                             <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
                             <div className="grid md:grid-flow-col self-center items-center gap-5">
-                                <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
-                                <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                                <a href="#contato" className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</a>
+                                <Link to="/Projetos/3"  className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</Link>
                             </div>
                         </div>
                     </div>
@@ -319,8 +327,8 @@ const Home = () => {
                             <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">REFORMA DE <br /> APARTAMENTO</h3>
                             <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
                             <div className="grid md:grid-flow-col self-center items-center gap-5">
-                                <button className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</button>
-                                <a href="#" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</a>
+                                <a href="#contato" className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</a>
+                                <Link to="/Projetos/4"  className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</Link>
                             </div>
                         </div>
                     </div>
@@ -361,7 +369,10 @@ const Home = () => {
                     </div>
                     <div className="lg:grid grid-flow-row justify-center md:grid-cols-2 justify-items-start hidden">
                         <div className="grid grid-flow-col items-center">
-                            <a className="rounded-full p-2 m-2 size-12 content-center hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10 stroke-white" src={phone} /></a>
+                            <button onClick={()=>{
+                                copiarTexto('+5513991243743')
+                                window.alert("Texto copiado para a área de transferência!")
+                                }} className="rounded-full p-2 m-2 size-12 content-center hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10 stroke-white" src={phone} /></button>
                             <p className="text-white lg:text-lg xl:text-xl">(62) 99124-3743</p>
                         </div>
                         <div className="grid grid-flow-col items-center">
@@ -369,7 +380,7 @@ const Home = () => {
                             <p className="text-white lg:text-lg xl:text-xl">@a6construtora</p>
                         </div>
                         <div className="grid grid-flow-col items-center">
-                            <a className="rounded-full content-center size-12 p-2 m-2  hover:scale-105 bg-laranja-primary cursor-pointer text-wrap">
+                            <a href="mailto:contato@a6construtora.com" className="rounded-full content-center size-12 p-2 m-2  hover:scale-105 bg-laranja-primary cursor-pointer text-wrap">
                             <img className="size-10 brightness-0" src={EmailWhite} />
                             </a>
                             <p className="text-white lg:text-lg xl:text-xl">contato@a6construtora.com</p>
@@ -378,7 +389,9 @@ const Home = () => {
                     {/* Mobile */}
                     <div className="grid grid-flow-row  md:grid-cols-2 lg:hidden gap-3">
                         <div className="grid grid-flow-col  items-center">
-                            <button className="Sora grid grid-flow-col justify-self-center justify-center bg-laranja-primary items-center text-black rounded-full p-5 hover:scale-105 duration-300 min-w-full text-xl"><img className="size-8" src={Whatsapp} /> &nbsp; WhatsApp</button>
+                            <button onClick={()=>{
+                                copiarTexto('+5513991243743')
+                                }} className="Sora grid grid-flow-col justify-self-center justify-center bg-laranja-primary items-center text-black rounded-full p-5 hover:scale-105 duration-300 min-w-full text-xl"><img className="size-8" src={Whatsapp} /> &nbsp; WhatsApp</button>
                         </div>
                         <div className="grid grid-flow-col items-center">
                             <button className="Sora grid grid-flow-col justify-self-center justify-center border-white border items-center text-black rounded-full p-5 hover:scale-105 duration-300 min-w-full text-xl">
@@ -388,17 +401,17 @@ const Home = () => {
 
                         </div>
                         <div className="grid grid-flow-col items-center">
-                            <button className="Sora grid grid-flow-col justify-self-center justify-center border-white border items-center text-black rounded-full p-5 hover:scale-105 duration-300 min-w-full text-xl">
+                            <a href="/A6Construtora.vcf" className="Sora grid grid-flow-col justify-self-center justify-center border-white border items-center text-black rounded-full p-5 hover:scale-105 duration-300 min-w-full text-xl">
                                 <img className="size-10 fill-white" src={PhoneWhite} />
                                 <p className="text-white text-xl">&nbsp;&nbsp;Salvar Contato</p>
-                            </button>
+                            </a>
 
                         </div>
                         <div className="grid grid-flow-col items-center">
-                            <button className="Sora grid grid-flow-col justify-self-center justify-center border-white border items-center text-black rounded-full p-5 hover:scale-105 duration-300 min-w-full text-xl">
+                            <a href="mailto:contato@a6construtora.com" className="Sora grid grid-flow-col justify-self-center justify-center border-white border items-center text-black rounded-full p-5 hover:scale-105 duration-300 min-w-full text-xl">
                                 <img className="size-10 fill-white" src={EmailWhite} />
                                 <p className="text-white text-xl">&nbsp;&nbsp;Enviar Email</p>
-                            </button>
+                            </a>
 
                         </div>
                     </div>

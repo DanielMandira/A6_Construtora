@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+UID:pas-id-9f64d67993c364440fdc62f0b36f3856ff461811
+X-URIS;TYPE=PERSONAL:a6construtora.com.br
+PHOTO;VALUE=uri:file:///home/mandirad/.local/share/evolution/addressbook/sy
+ stem/photos/pas_id_9f64d67993c364440fdc62f0b36f3856ff461811_photo-file0.im
+ age-2Fpng
+TEL;TYPE=CELL;X-EVOLUTION-E164=13991243743:55 13 99124-3743
+FN:A6 Construtora
+N:Construtora;A6;;;
+X-EVOLUTION-FILE-AS:Construtora\, A6
+EMAIL;TYPE=WORK:contato@a6construtora.com
+REV:2024-05-06T01:08:18Z
+END:VCARD
+
