@@ -45,6 +45,7 @@ const NavBar = () => {
     };
 
     return (
+        <>
         <header className={`Sora grid md:px-0 grid-flow-col text-nowrap border-white border-b text-center text-white`}>
             <Modal />
             <div className="hidden md:grid border-e border-white w-10"></div>
@@ -85,6 +86,7 @@ const NavBar = () => {
             </div>
             <div className="hidden md:grid border-white w-10 "></div>
         </header>
+        </>
     )
 }
 export default NavBar
