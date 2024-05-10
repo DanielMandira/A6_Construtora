@@ -56,7 +56,7 @@ const Servicos = () => {
         <h2 className='Michroma text-4xl lg:text-6xl text-white'>DEIXE-NOS CONSTRUIR SEU 
         <span className=' text-laranja-primary'> SONHO</span>
         </h2>
-        <a className='Sora text-white text-2xl p-4 rounded-full border text-center justify-self-start border-white hover:scale-105 hover:bg-laranja-primary hover:text-black cursor-pointer '>Pedir Orçamento</a>
+        <a href="https://api.whatsapp.com/send?phone=+5562991243743&text=Ol%C3%A1,%20A6%20Construtora!" target="_blank"  className='Sora text-white text-2xl p-4 rounded-full border text-center justify-self-start border-white hover:scale-105 hover:bg-laranja-primary hover:text-black cursor-pointer '>Pedir Orçamento</a>
         </div>
         <img className='w-full h-max object-contain' src={Estrutura}/>
       </section>
@@ -66,7 +66,7 @@ const Servicos = () => {
         <h2 className='Michroma text-3xl text-white'>DEIXE-NOS CONSTRUIR SEU 
         <span className=' text-laranja-primary'> SONHO</span>
         </h2>
-        <a className='Sora min-w-60   text-white text-base p-4 rounded-full border border-white hover:scale-105 hover:bg-laranja-primary hover:text-black cursor-pointer'>Pedir Orçamento</a>
+        <a href="https://api.whatsapp.com/send?phone=+5562991243743&text=Ol%C3%A1,%20A6%20Construtora!" target="_blank"  className='Sora min-w-60   text-white text-base p-4 rounded-full border border-white hover:scale-105 hover:bg-laranja-primary hover:text-black cursor-pointer'>Pedir Orçamento</a>
         
       </section>
       </>
