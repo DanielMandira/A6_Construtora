@@ -121,7 +121,7 @@ const Home = () => {
                         <div className="border border-white">
                             <img className=" object-cover grayscale" src={Comercial} />
                             <div className="p-4">
-                                <p className="Sora text-sm lg:text-base text-white">Planejamento e realização de um Galpão Comercial</p>
+                                <p className="Sora text-sm lg:text-base text-white">Planejamento e execução de Galpão Comercial</p>
                                 <Link to="/Projetos/3" className=" Sora text-sm lg:text-base text-laranja-primary cursor-pointer ">Ver mais +</Link>
                             </div>
                         </div>
@@ -279,7 +279,7 @@ const Home = () => {
                         <div className="grid grid-flow-row max-w-500 xl:max-w-655 gap-5 p-3 border-white border">
                             <div className="grid relative">
                                 {/* Mouse Hover Icon */}
-                                <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center">
+                                <div className="absolute bottom-3 left-3 z-10 grid grid-flow-col items-center"> 
                                     <img className="size-4 md:size-8 lg:size-14 opacity-50 hidden md:grid" src={Mouse} />
                                     <p className=" sora text-xs text-white opacity-50 hidden md:grid">Passe o mouse <br /> acima da imagem</p>
                                 </div>
@@ -287,7 +287,7 @@ const Home = () => {
                                 <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3 opacity-50 hidden md:grid">
                                     <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                                 </div>
-                                <img src={Obra1} className="grayscale hover:grayscale-0 object-cover duration-300 h-full md:max-w-full w-auto" />
+                                <img src={Obra1} className="grayscale hover:grayscale-0 object-cover duration-300 lg:h-full md:max-w-full w-auto" />
                             </div>
                             <div className="grid gap-2 text-center md:text-start">
                                 <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GERENCIAMENTO DE OBRA</h3>
@@ -310,7 +310,7 @@ const Home = () => {
                                 <div className=" border-laranja-primary border rounded-full absolute z-10 right-3 top-3 opacity-50 hidden md:grid">
                                     <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                                 </div>
-                                <img src={Obra2} className="grayscale hover:grayscale-0 duration-300 object-cover h-full md:max-w-full" />
+                                <img src={Obra2} className="grayscale hover:grayscale-0 duration-300 object-cover lg:h-full md:max-w-full" />
                             </div>
                             <div className="grid gap-3 text-center md:text-start ">
                                 <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">ADEQUAÇÃO DE SALA COMERCIAL</h3>
@@ -336,10 +336,10 @@ const Home = () => {
                             <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8 opacity-50 hidden md:grid">
                                 <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                             </div>
-                            <img src={Obra3} className="grayscale hover:grayscale-0 duration-300 object-cover h-full w-auto md:max-w-full" />
+                            <img src={Obra3} className="grayscale hover:grayscale-0 duration-300 object-cover lg:h-full w-auto md:max-w-full" />
                         </div>
                         <div className="grid gap-3 text-center md:text-start ">
-                            <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GALPÃO <br /> INDUSTRIAL</h3>
+                            <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">EXECUÇÃO DE PISO POLIDO</h3>
                             <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
                             <div className="grid md:grid-flow-col self-center items-center gap-5">
                                 <a href="#contato" className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</a>
@@ -359,7 +359,7 @@ const Home = () => {
                             <div className="border-laranja-primary border rounded-full absolute z-10 right-10 top-8 opacity-50 hidden md:grid">
                                 <p className="Sora p-2 lg:py-5 lg:px-3 stroke-laranja-primary stroke text-transparente text-xs md:text-2xl lg:text-5xl">A6</p>
                             </div>
-                            <img src={Obra4} className="grayscale hover:grayscale-0 duration-300 object-cover h-full md:max-w-full" />
+                            <img src={Obra4} className="grayscale hover:grayscale-0 duration-300 object-cover lg:h-full md:max-w-full" />
                         </div>
                         <div className="grid gap-3 text-center md:text-start ">
                             <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">REFORMA DE <br /> APARTAMENTO</h3>
@@ -402,7 +402,7 @@ const Home = () => {
                     <h2 className="Michroma text-2xl text-white md:text-4xl xl:text-5xl">DEIXE-NOS <span className=" text-laranja-primary">CONSTRUIR</span><br /> SEU SONHO</h2>
                     <p className="Sora text-white text-sm md:text-base">Peça seu orçamento agora! Sinta-se a vontade para entrar em contato com o nosso time, ficamos felizes de tirar suas dúvidas ou discutir seu próximo projeto!</p>
                     <div className="grid grid-flow-row md:grid-flow-col gap-5 content-center items-center">
-                        <a href="https://api.whatsapp.com/send?phone=+5562991243743&text=Ol%C3%A1,%20A6%20Construtora!" target="_blank" className="Sora lg:grid hidden grid-flow-col justify-self-center justify-center bg-laranja-primary items-center text-black rounded-full p-5 hover:scale-105 duration-300 lg:text-lg xl:text-xl"><img className="size-10" src={Whatsapp} /> &nbsp;&nbsp;Conversar no WhatsApp</a>
+                        <a href="https://api.whatsapp.com/send?phone=+5562991243743&text=Ol%C3%A1,%20A6%20Construtora!" target="_blank" className="Sora lg:grid hidden grid-flow-col justify-self-center justify-center bg-laranja-primary items-center text-black rounded-full p-5 hover:scale-105 duration-300 lg:text-lg xl:text-xl text-center"><img className="size-10" src={Whatsapp} /> &nbsp;&nbsp;Conversar no WhatsApp</a>
                         <button onClick={() => toggleModal()} className="Sora hidden lg:grid grid-flow-col  justify-center border border-white text-white items-center rounded-full p-5 hover:scale-105 duration-300 lg:text-lg xl:text-xl"><img className="size-10" src={QrCode} /> &nbsp;&nbsp; Escanear QrCode</button>
                     </div>
                     <div className="lg:grid grid-flow-row justify-center md:grid-cols-2 justify-items-start hidden">

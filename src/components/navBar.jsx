@@ -49,7 +49,7 @@ const NavBar = () => {
         <header className={`Sora grid md:px-0 grid-flow-col text-nowrap border-white border-b text-center text-white`}>
             <Modal />
             <div className="hidden md:grid border-e border-white w-10"></div>
-            <div className=" border-e border-white content-center ">
+            <div className=" border-e border-white justify-center flex items-center">
                 <h1 className='text-laranja-primary'><a href="/"><img  src={A6_icon} /></a></h1>
             </div>
             <div className=" border-e border-white col-span-4 "> </div>
