@@ -31,7 +31,7 @@ const ProjetosData = [
     {
         id: 1,
         titulo:'Gerenciamento de Obra',
-        info: "Falar um pouco sobre o projeto. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",  
+        info: "O Gerenciamento de Obra é uma das áreas fundamentais em que atuamos, proporcionando uma supervisão completa de todas as etapas do seu projeto. Nosso serviço inclui o planejamento detalhado, a coordenação de fornecedores, o controle rigoroso de prazos e orçamentos, e a garantia de conformidade com os mais altos padrões de qualidade e segurança. Nossa equipe de profissionais experientes está dedicada a garantir que cada fase do seu projeto seja executada com precisão e eficiência. Com uma comunicação transparente e uma abordagem proativa na resolução de problemas, oferecemos tranquilidade aos nossos clientes, assegurando que o resultado final seja de altíssima qualidade.",  
         img: [
             {
                 src: Obra11,
@@ -47,7 +47,7 @@ const ProjetosData = [
     {
         id: 2,
         titulo:'Adequação de sala comercial',
-        info: "Falar um pouco sobre o projeto. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        info: "A Adequação de Sala Comercial é essencial para adaptar espaços às necessidades específicas de diferentes tipos de negócios. Seja para criar um ambiente de escritório funcional, um consultório médico moderno ou uma loja atrativa, nossa equipe está preparada para realizar a reconfiguração de layout, modernização de instalações e adaptações de acessibilidade necessárias. Trabalhamos em estreita colaboração com nossos clientes para entender suas necessidades e objetivos, garantindo que o espaço resultante seja não apenas funcional, mas também esteticamente agradável e propício à produtividade. Nosso compromisso é criar ambientes que realmente atendam às expectativas e impulsionem o sucesso do seu negócio.",
         img: [
             {
                 src: Obra21,
@@ -63,7 +63,7 @@ const ProjetosData = [
     {
         id: 3,
         titulo:'Galpão Industrial',
-        info: "Falar um pouco sobre o projeto. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        info: "Nosso projeto de Galpão Industrial é desenhado para atender às necessidades específicas de cada cliente, fornecendo soluções robustas e eficientes para diferentes setores da indústria. Com um enfoque na funcionalidade e na durabilidade, utilizamos materiais de alta qualidade e técnicas de construção modernas. Nossa equipe de engenheiros e arquitetos trabalha em conjunto para projetar galpões que não só atendem às exigências de armazenamento, logística e produção, mas também proporcionam um ambiente seguro e otimizado para as operações diárias. Desde a concepção inicial até a finalização, garantimos que cada detalhe seja cuidadosamente considerado para maximizar a eficiência e a longevidade da estrutura.",
         img: [
             {
                 src: Obra31,
@@ -104,7 +104,7 @@ const ProjetosData = [
     {
         id: 4,
         titulo:'Reforma de Apartamento',
-        info: "Falar um pouco sobre o projeto. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        info: "A Reforma de Apartamento é uma excelente oportunidade para renovar e valorizar seu imóvel. Oferecemos um serviço completo que inclui a atualização de acabamentos, redistribuição de espaços, modernização de instalações elétricas e hidráulicas, e melhorias estéticas. Nossa equipe de especialistas trabalha com um planejamento detalhado para garantir que cada etapa do processo seja realizada com eficiência e qualidade. Com um enfoque na personalização e no atendimento às necessidades específicas de cada cliente, nosso objetivo é transformar seu apartamento em um espaço moderno, funcional e confortável, aumentando tanto o seu valor de mercado quanto o seu conforto diário.",
         img: [
             {
                 src:Obra41,

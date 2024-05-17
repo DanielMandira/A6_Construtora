@@ -121,7 +121,7 @@ const Home = () => {
                         <div className="border border-white">
                             <img className=" object-cover grayscale" src={Comercial} />
                             <div className="p-4">
-                                <p className="Sora text-sm lg:text-base text-white">Planejamento e execução de Galpão Comercial</p>
+                                <p className="Sora text-sm lg:text-base text-white">Planejamento e execução de Galpão Industrial</p>
                                 <Link to="/Projetos/3" className=" Sora text-sm lg:text-base text-laranja-primary cursor-pointer ">Ver mais +</Link>
                             </div>
                         </div>
