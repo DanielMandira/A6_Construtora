@@ -291,7 +291,7 @@ const Home = () => {
                             </div>
                             <div className="grid gap-2 text-center md:text-start">
                                 <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">GERENCIAMENTO DE OBRA</h3>
-                                <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
+                                <p className="Sora text-xs text-white lg:text-base">Oferecemos supervisão completa de obras, garantindo qualidade, prazos e orçamento rigorosamente controlados.</p>
                                 <div className="grid md:grid-flow-col self-center items-center gap-3">
                                     <a href="#contato" className="Sora justify-self-center cursor-pointer bg-laranja-primary rounded-full text-black text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</a>
                                     <Link to="/Projetos/1" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</Link>
@@ -314,7 +314,7 @@ const Home = () => {
                             </div>
                             <div className="grid gap-3 text-center md:text-start ">
                                 <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">ADEQUAÇÃO DE SALA COMERCIAL</h3>
-                                <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
+                                <p className="Sora text-xs text-white lg:text-base">Adaptamos salas comerciais para diversas necessidades, criando ambientes funcionais e esteticamente agradáveis.</p>
                                 <div className="grid md:grid-flow-col self-center items-center gap-5">
                                     <a href="#contato" className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</a>
                                     <Link to="/Projetos/2" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</Link>
@@ -340,7 +340,7 @@ const Home = () => {
                         </div>
                         <div className="grid gap-3 text-center md:text-start ">
                             <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">EXECUÇÃO DE PISO POLIDO</h3>
-                            <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
+                            <p className="Sora text-xs text-white lg:text-base">Projetamos galpões industriais robustos e eficientes, otimizados para armazenamento, logística e produção.</p>
                             <div className="grid md:grid-flow-col self-center items-center gap-5">
                                 <a href="#contato" className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</a>
                                 <Link to="/Projetos/3" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</Link>
@@ -363,7 +363,7 @@ const Home = () => {
                         </div>
                         <div className="grid gap-3 text-center md:text-start ">
                             <h3 className="Michroma text-base text-white md:text-xl lg:text-4xl leading-snug sm:leading-snug md:leading-snug lg:leading-snug">REFORMA DE <br /> APARTAMENTO</h3>
-                            <p className="Sora text-xs text-white lg:text-base">Gerenciamento de obra</p>
+                            <p className="Sora text-xs text-white lg:text-base">Renovamos apartamentos com modernização completa, aumentando seu valor de mercado e conforto diário.</p>
                             <div className="grid md:grid-flow-col self-center items-center gap-5">
                                 <a href="#contato" className="Sora cursor-pointer bg-laranja-primary rounded-full text-black justify-self-center text-sm lg:text-base px-5 py-2 hover:scale-105 duration-300">Orçamento</a>
                                 <Link to="/Projetos/4" className="Sora text-white text-xs decoration-white decoration-solid underline cursor-pointer hover:text-laranja-primary hover:decoration-laranja-primary duration-300 lg:text-base">+ Ver Galeria do Projeto</Link>
