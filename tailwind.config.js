@@ -56,10 +56,6 @@ export default {
         '650':'650px',
         '525':'525px'
 
-
-
-
-
       },
       maxWidth: {
         '155': '1650px',
@@ -68,7 +64,6 @@ export default {
         '847':'847px',
         '381':'331px',
         '655':'847px'
-
       },
       spacing: {
         '82':'27.5rem',

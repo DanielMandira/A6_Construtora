@@ -160,7 +160,7 @@ const Home = () => {
             </section>
             <br />
             {/* Carrossel */}
-            <section className="grid grid-flow-row md:px-5 lg:px-10 xl:px-20 ">
+            <section className="grid grid-flow-row md:px-5 lg:px-10 xl:px-20 z-0 ">
                 <div className="grid justify-center md:justify-start relative">
                     <h2 className="Michroma text-4xl text-white ">SERVIÇOS</h2>
                 </div>
@@ -410,18 +410,18 @@ const Home = () => {
                             <button onClick={() => {
                                 copiarTexto('+5562991243743')
                                 window.alert("Texto copiado para a área de transferência!")
-                            }} className="rounded-full p-2 m-2 size-12 content-center hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10 stroke-white" src={phone} /></button>
+                            }} className="rounded-full flex items-center p-2 m-2 size-12 content-center hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10 stroke-white" src={phone} /></button>
                             <p className="text-white lg:text-lg xl:text-xl">(62) 99124-3743</p>
                         </div>
                         <div className="grid grid-flow-col items-center">
-                            <a className="rounded-full content-center p-2 m-2 size-12 hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10" src={instagram} /></a>
+                            <a className="rounded-full flex items-center content-center p-2 m-2 size-12 hover:scale-105 bg-laranja-primary cursor-pointer"><img className="size-10" src={instagram} /></a>
                             <p className="text-white lg:text-lg xl:text-xl">@a6construtora</p>
                         </div>
                         <div className="grid grid-flow-col items-center">
                         <button onClick={() => {
                                 copiarTexto('contato@a6construtora.com')
                                 window.alert("Texto copiado para a área de transferência!")
-                            }}  className="rounded-full content-center size-12 p-2 m-2  hover:scale-105 bg-laranja-primary cursor-pointer text-wrap">
+                            }}  className="rounded-full flex items-center content-center size-12 p-2 m-2  hover:scale-105 bg-laranja-primary cursor-pointer text-wrap">
                                 <img className="size-10 brightness-0" src={EmailWhite} />
                             </button>
                             <p className="text-white lg:text-lg xl:text-xl">contato@a6construtora.com</p>

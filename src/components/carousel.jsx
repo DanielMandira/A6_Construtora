@@ -86,7 +86,7 @@ const Carousel = ({ data }) => {
       >
         {[...data,...data,...data].slice(currentIndex, currentIndex + numItemsShow).map((d, index) => (
           
-          <div key={index} className="grid grid-flow-row  w-66 md:w-56 h-485 md:h-525 xl:w-72 2xl:w-83   border border-white">
+          <div key={index} className="grid grid-flow-row  w-66 md:w-56 h-485 md:h-525 xl:w-72 2xl:w-81   border border-white">
             <div className="h-393">
               <img className="object-cover w-full h-full grayscale" src={d.src} alt={d.info} />
             </div>
