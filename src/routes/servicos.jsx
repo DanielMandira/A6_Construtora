@@ -31,13 +31,13 @@ const Servicos = () => {
       <p className='Sora hidden md:grid text-white text-base'>{servico.info}</p>
       </div>
       <div className=' col-span-3'>
-      <img className='h-full max-h-113 w-706   object-cover  hidden md:grid grayscale' src={servico.src}/>
+      <img className='h-full max-h-113 w-706   object-cover  hidden md:grid grayscale' src={servico.src} alt={servico.title} width="900" height="650" loading="lazy" decoding="async"/>
       </div>
     </section>
     <br />
     {/* Mobile */}
     <section className='grid md:hidden grid-flow-row gap-3 mx-3' >
-      <img className='w-full object-cover grayscale' src={servico.src}/>
+      <img className='w-full object-cover grayscale' src={servico.src} alt={servico.title} width="800" height="550" loading="lazy" decoding="async"/>
       <p className='Sora text-white text-xs'>{servico.info}</p>
     </section>
     <br />
@@ -56,17 +56,17 @@ const Servicos = () => {
         <h2 className='Michroma text-4xl lg:text-6xl text-white'>DEIXE-NOS CONSTRUIR SEU 
         <span className=' text-laranja-primary'> SONHO</span>
         </h2>
-        <a href="https://api.whatsapp.com/send?phone=+5562991243743&text=Ol%C3%A1,%20A6%20Construtora!" target="_blank"  className='Sora text-white text-2xl p-4 rounded-full border text-center justify-self-start border-white hover:scale-105 hover:bg-laranja-primary hover:text-black cursor-pointer '>Pedir Orçamento</a>
+        <a href="https://api.whatsapp.com/send?phone=+5562991243743&text=Ol%C3%A1,%20A6%20Construtora!" target="_blank" rel="noreferrer"  className='Sora text-white text-2xl p-4 rounded-full border text-center justify-self-start border-white hover:scale-105 hover:bg-laranja-primary hover:text-black cursor-pointer '>Pedir Orçamento</a>
         </div>
-        <img className='w-full h-max object-contain' src={Estrutura}/>
+        <img className='w-full h-max object-contain' src={Estrutura} alt="Estrutura" loading="lazy" decoding="async"/>
       </section>
       {/* Mobile */}
       <section className='grid md:hidden grid-flow-row justify-center text-center mx-3 gap-5 justify-items-center'>
-        <img src={Estrutura}/>
+        <img src={Estrutura} alt="Estrutura" loading="lazy" decoding="async"/>
         <h2 className='Michroma text-3xl text-white'>DEIXE-NOS CONSTRUIR SEU 
         <span className=' text-laranja-primary'> SONHO</span>
         </h2>
-        <a href="https://api.whatsapp.com/send?phone=+5562991243743&text=Ol%C3%A1,%20A6%20Construtora!" target="_blank"  className='Sora min-w-60   text-white text-base p-4 rounded-full border border-white hover:scale-105 hover:bg-laranja-primary hover:text-black cursor-pointer'>Pedir Orçamento</a>
+        <a href="https://api.whatsapp.com/send?phone=+5562991243743&text=Ol%C3%A1,%20A6%20Construtora!" target="_blank" rel="noreferrer"  className='Sora min-w-60   text-white text-base p-4 rounded-full border border-white hover:scale-105 hover:bg-laranja-primary hover:text-black cursor-pointer'>Pedir Orçamento</a>
         
       </section>
       </>
