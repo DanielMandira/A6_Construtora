@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+/* eslint-disable react/prop-types */
+import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import arrow from '../assets/icons/arrow.svg';
 import { Link } from "react-router-dom";
 
@@ -8,7 +9,8 @@ const Carousel = ({ data }) => {
   const carouselRef = useRef(null);
   const startXRef = useRef(0);
 
-  const handleSlideChange = (direction) => {
+  const handleSlideChange = useCallback((direction) => {
+    if (!data.length) return;
     if (direction === "prev") {
       setCurrentIndex((prevIndex) =>
         prevIndex === 0 ? data.length - 1 : prevIndex - 1
@@ -16,7 +18,7 @@ const Carousel = ({ data }) => {
     } else {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
     }
-  };
+  }, [data.length]);
 
   const handleDragStart = (event) => {
     startXRef.current = event.clientX || event.touches[0].clientX;
@@ -24,7 +26,7 @@ const Carousel = ({ data }) => {
     document.addEventListener("touchend", handleDragEnd);
   };
 
-  const handleDragEnd = (event) => {
+  const handleDragEnd = useCallback((event) => {
     document.removeEventListener("mouseup", handleDragEnd);
     document.removeEventListener("touchend", handleDragEnd);
 
@@ -37,12 +39,12 @@ const Carousel = ({ data }) => {
     } else if (deltaX < -threshold) {
       handleSlideChange("next");
     }
-  };
+  }, [handleSlideChange]);
   
   useEffect(() => {
     const handleResize = () => {
-      const windowWidth = document.documentElement.clientWidth;
-      const windowHeight = document.documentElement.clientHeight;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
       if (windowWidth >= 1024) {
         setNumItemsShow(4);
       } else if (windowWidth >= 768 && windowHeight > 425) {
@@ -57,6 +59,11 @@ const Carousel = ({ data }) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const visibleItems = useMemo(() => {
+    if (!data.length) return [];
+    return Array.from({ length: numItemsShow }, (_, index) => data[(currentIndex + index) % data.length]);
+  }, [currentIndex, data, numItemsShow]);
 
   return (
     <section className="grid grid-flow-row justify-center justify-self-center">
@@ -84,11 +91,11 @@ const Carousel = ({ data }) => {
         onTouchStart={handleDragStart}
         onTouchEnd={handleDragEnd}
       >
-        {[...data,...data,...data].slice(currentIndex, currentIndex + numItemsShow).map((d, index) => (
+        {visibleItems.map((d, index) => (
           
           <div key={index} className="grid grid-flow-row  w-66 md:w-56 h-485 md:h-525 xl:w-72 2xl:w-81   border border-white">
             <div className="h-393">
-              <img className="object-cover w-full h-full grayscale" src={d.src} alt={d.info} />
+              <img className="object-cover w-full h-full grayscale" src={d.src} alt={d.info} loading="lazy" decoding="async" />
             </div>
             <div className="p-3 grid grid-flow-row text-center justify-center content-baseline self-baseline">
               <p className="Sora text-white text-lg md:text-xl lg:text-2xl">{d.title}</p>

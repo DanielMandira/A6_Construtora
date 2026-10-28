@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+/* eslint-disable react/prop-types */
+import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import arrow from '../assets/icons/arrow.svg';
 
 const CarouselBeneficios = ({ data }) => {
@@ -7,7 +8,8 @@ const CarouselBeneficios = ({ data }) => {
   const carouselBeneRef = useRef(null);
   const startXRef = useRef(0);
 
-  const handleSlideChange = (direction) => {
+  const handleSlideChange = useCallback((direction) => {
+    if (!data.length) return;
     if (direction === "prev") {
       setCurrentIndex((prevIndex) =>
         prevIndex === 0 ? data.length - 1 : prevIndex - 1
@@ -15,7 +17,7 @@ const CarouselBeneficios = ({ data }) => {
     } else {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
     }
-  };
+  }, [data.length]);
 
   const handleDragStart = (event) => {
     startXRef.current = event.clientX || event.touches[0].clientX;
@@ -23,7 +25,7 @@ const CarouselBeneficios = ({ data }) => {
     document.addEventListener("touchend", handleDragEnd);
   };
 
-  const handleDragEnd = (event) => {
+  const handleDragEnd = useCallback((event) => {
     document.removeEventListener("mouseup", handleDragEnd);
     document.removeEventListener("touchend", handleDragEnd);
 
@@ -36,12 +38,12 @@ const CarouselBeneficios = ({ data }) => {
     } else if (deltaX < -threshold) {
       handleSlideChange("next");
     }
-  };
+  }, [handleSlideChange]);
   
   useEffect(() => {
     const handleResize = () => {
-      const windowWidth = document.documentElement.clientWidth;
-      const windowHeight = document.documentElement.clientHeight;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
 
       if (windowWidth >= 1024) {
         setNumItemsShow(2);
@@ -58,6 +60,11 @@ const CarouselBeneficios = ({ data }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const visibleItems = useMemo(() => {
+    if (!data.length) return [];
+    return Array.from({ length: numItemsShow }, (_, index) => data[(currentIndex + index) % data.length]);
+  }, [currentIndex, data, numItemsShow]);
+
   return (
     <section className="flex flex-col flex-1 justify-center md:justify-end md:items-end items-center my-10 lg:my-0 ">
       <div
@@ -68,10 +75,10 @@ const CarouselBeneficios = ({ data }) => {
         onTouchStart={handleDragStart}
         onTouchEnd={handleDragEnd}
       >
-        {[...data,...data].slice(currentIndex, currentIndex + numItemsShow).map((d, index) => (
+        {visibleItems.map((d, index) => (
           <div key={index} className="grid grid-flow-row border max-w-xs xl:max-w-sm h-622 md:h-650 md:max-w-60 border-white p-5">
             <div className=" relative h-80">
-              <img className=" object-cover h-full w-full grayscale" src={d.src} alt={d.info} />
+              <img className=" object-cover h-full w-full grayscale" src={d.src} alt={d.info} loading="lazy" decoding="async" />
               <div className="bg-laranja-primary size-16 absolute z-10 right-0 bottom-0">
                 <img className="p-2" src={d.icon} alt={d.id} />
               </div>
