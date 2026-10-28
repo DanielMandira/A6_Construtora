@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+/* eslint-disable react/prop-types */
+import { useEffect, useRef, useState } from 'react';
 
 const LazySection = ({ children, minHeight = '320px', rootMargin = '300px 0px' }) => {
   const [isVisible, setIsVisible] = useState(false);

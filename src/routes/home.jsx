@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState, useEffect } from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 import ArrowRD from '../assets/icons/ArrowRD.svg'
 import ArrowD from '../assets/icons/ArrowD.svg'
 import Lateral from '../assets/imgs/lateral.webp'
@@ -34,13 +34,14 @@ const Home = () => {
         setIsOpen(!isOpen);
     }
 
-    const handleOutsideClick = (event) => {
-        if (isOpen && !event.target.closest('.qrcode-modal')) {
-            setIsOpen(false)
-        }
-        const sectionFallback = <div className="mx-5 lg:mx-10 xl:mx-20 my-10 h-80 border border-white/20 animate-pulse" />;
-    }
+    const sectionFallback = <div className="mx-5 lg:mx-10 xl:mx-20 my-10 h-80 border border-white/20 animate-pulse" />;
     useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (isOpen && !event.target.closest('.qrcode-modal')) {
+                setIsOpen(false)
+            }
+        }
+
         document.addEventListener('mousedown', handleOutsideClick)
         return () => {
             document.removeEventListener('mousedown', handleOutsideClick)

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import CarouselData from '../data/carouseldata';
 import Estrutura from '../assets/icons/estrutura.png'
@@ -6,17 +6,18 @@ import Carousel from '../components/carousel.jsx';
 
 const Servicos = () => {
   const { id } = useParams(); // Obtém o ID da URL
-    const servico = CarouselData.find(servico => servico.id === parseInt(id));
+  const servico = CarouselData.find(servico => servico.id === parseInt(id));
+  const location = useLocation()
+
+  useEffect(()=>{
+    scrollTo(0,0)
+  }, [location.pathname])
 
   if (!servico) {
     return <div>
       <h3 className='Sora Text-xl text-white text-center justify-center m-36 '>Não foi encontrada Servico com o ID fornecido.</h3>
     </div>;
   }
-    const location = useLocation()
-    useEffect(()=>{
-      scrollTo(0,0)
-    }, [location.pathname])
   return (
     <>
     <br />

@@ -1,4 +1,3 @@
-import React from 'react';
 import CarouselBeneficios from '../carouselBeneficios';
 import dataBene from '../../data/carouselBeneficios';
 

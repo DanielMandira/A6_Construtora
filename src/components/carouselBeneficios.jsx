@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef, useMemo, useCallback } from "react";
+/* eslint-disable react/prop-types */
+import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import arrow from '../assets/icons/arrow.svg';
 
 const CarouselBeneficios = ({ data }) => {

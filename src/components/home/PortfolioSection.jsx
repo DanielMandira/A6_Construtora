@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import Mouse from '../../assets/icons/mouse.svg';
 import Obra1 from '../../assets/imgs/Obra_1/Obra_1.3.webp';
