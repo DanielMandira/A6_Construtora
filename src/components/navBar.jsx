@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link, } from "react-router-dom";
 import Menu from '../assets/icons/menu-icon.svg'
 import A6_icon from '../assets/icons/a6Icon.png'
@@ -8,35 +8,35 @@ const NavBar = () => {
         setIsOpen(!isOpen);
     }
 
-    const handleOutsideClick = (event) => {
+    const handleOutsideClick = useCallback((event) => {
         if (isOpen && !event.target.closest('.navbar-modal')) {
             setIsOpen(false)
         }
-    }
+    }, [isOpen])
     useEffect(() => {
         document.addEventListener('mousedown', handleOutsideClick)
         return () => {
             document.removeEventListener('mousedown', handleOutsideClick)
         }
-    }, [isOpen])
+    }, [handleOutsideClick])
     const Modal = () => {
         return (
             <header className={`${isOpen ? 'fixed top-0 start-0 grid grid-flow-row bg-grafite p-10 duration-500 w-9/12 z-10 h-full  lg:hidden text-start content-start gap-10 navbar-modal' : 'hidden'}`}>
                 <h1 className='text-laranja-primary text-xl md:text-2xl'>A6 Construtora</h1>
                 <div className="grid grid-flow-row gap-6">
-                    <Link onClick={toggleNavBar} exact to='/' className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl" activeClassName="text-laranja-primary" >
+                    <Link onClick={toggleNavBar} to='/' className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl" >
                         Home
                     </Link>
-                    <a onClick={toggleNavBar} className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='/#sobre'>
+                    <a onClick={toggleNavBar} className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " href='/#sobre'>
                         Sobre
                     </a>
-                    <a  onClick={toggleNavBar}  className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='/#projetos'>
+                    <a  onClick={toggleNavBar}  className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " href='/#projetos'>
                         Projetos
                     </a>
-                    <a onClick={toggleNavBar} className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='/#beneficios'>
+                    <a onClick={toggleNavBar} className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " href='/#beneficios'>
                         Benefícios
                     </a>
-                    <a onClick={toggleNavBar} className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='/#contato'>
+                    <a onClick={toggleNavBar} className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " href='/#contato'>
                         Contato
                     </a>
                 </div>
@@ -54,27 +54,27 @@ const NavBar = () => {
             </div>
             <div className=" border-e border-white col-span-4 "> </div>
             <div className={` hidden  border-e lg:grid border-white content-center`}>
-                <Link exact href='/' className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" >
+                <Link to='/' className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " >
                     Home
                 </Link>
             </div>
             <div className={` hidden  border-e lg:grid border-white content-center`}>
-                <a className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='/#sobre'>
+                <a className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " href='/#sobre'>
                     Sobre
                 </a>
             </div>
             <div className={` hidden  border-e lg:grid border-white content-center`}>
-                <a className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='/#projetos'>
+                <a className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " href='/#projetos'>
                     Projetos
                 </a>
             </div>
             <div className={` hidden  border-e lg:grid border-white content-center`}>
-                <a className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='/#beneficios'>
+                <a className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " href='/#beneficios'>
                     Benefícios
                 </a>
             </div>
             <div className={` hidden  border-e lg:grid border-white content-center`}>
-                <a className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " activeClassName="text-laranja-primary" href='/#contato'>
+                <a className="hover:text-laranja-primary nav-link text-white Sora text-lg md:text-xl " href='/#contato'>
                     Contato
                 </a>
             </div>
